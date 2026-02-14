@@ -4,11 +4,11 @@
 
 :root {
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 255, 255, 255;
-  --background-end-rgb: 255, 255, 255;
+  --background-start-rgb: 244, 248, 248;
+  --background-end-rgb: 244, 248, 248;
 }
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: white;
+  background: #F4F8F8;
 }

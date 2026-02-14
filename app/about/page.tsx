@@ -2,7 +2,7 @@ import Button from '@/components/ui/Button'
 
 export default function About() {
     return (
-        <div className="bg-white min-h-screen py-12 px-4 sm:px-6 lg:px-8">
+        <div style={{ backgroundColor: '#F4F8F8' }} className="min-h-screen py-12 px-4 sm:px-6 lg:px-8">
             <div className="max-w-4xl mx-auto">
                 <h1 className="text-4xl font-bold text-navy-dark mb-8 text-center">About Port Credit Physio</h1>
 

@@ -4,10 +4,26 @@ import Link from 'next/link'
 
 export default function Home() {
   const services = [
-    { title: 'Physiotherapy', description: 'Restore movement and function when you are affected by injury, illness or disability.' },
-    { title: 'Massage Therapy', description: 'Relieve pain, reduce stress, and improve physical function.' },
-    { title: 'Chiropractic', description: 'Diagnosis and treatment of mechanical disorders of the musculoskeletal system.' },
-    { title: 'Acupuncture', description: 'Stimulate specific points on the body to relieve pain and improve health.' },
+    { 
+      title: 'Physiotherapy', 
+      description: 'Restore movement and function when you are affected by injury, illness or disability.',
+      imageUrl: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600&h=400&fit=crop&q=80'
+    },
+    { 
+      title: 'Massage Therapy', 
+      description: 'Relieve pain, reduce stress, and improve physical function.',
+      imageUrl: 'https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=600&h=400&fit=crop&q=80'
+    },
+    { 
+      title: 'Chiropractic', 
+      description: 'Diagnosis and treatment of mechanical disorders of the musculoskeletal system.',
+      imageUrl: 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=600&h=400&fit=crop&q=80'
+    },
+    { 
+      title: 'Acupuncture', 
+      description: 'Stimulate specific points on the body to relieve pain and improve health.',
+      imageUrl: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=600&h=400&fit=crop&q=80'
+    },
   ]
 
   return (
@@ -22,7 +38,7 @@ export default function Home() {
             Comprehensive physiotherapy and rehabilitation services tailored to your unique needs in Port Credit.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <Button href="#" variant="secondary" className="text-lg px-8 py-4">
+            <Button href="#" variant="secondary" className="text-lg px-8 py-4" style={{ backgroundColor: '#96B9B9', color: 'white' }}>
               Book Appointment
             </Button>
             <Button href="/services" variant="outline" className="text-lg px-8 py-4 border-white text-white hover:bg-white hover:text-navy-dark ring-white focus:ring-white">
@@ -33,7 +49,7 @@ export default function Home() {
       </section>
 
       {/* Services Section */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
+      <section className="py-16 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: '#F4F8F8' }}>
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-navy-dark mb-4">Our Services</h2>
@@ -43,7 +59,12 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {services.map((service, index) => (
-              <ServiceCard key={index} title={service.title} description={service.description} />
+              <ServiceCard 
+                key={index} 
+                title={service.title} 
+                description={service.description}
+                imageUrl={service.imageUrl}
+              />
             ))}
           </div>
           <div className="text-center mt-12">
@@ -58,7 +79,7 @@ export default function Home() {
       </section>
 
       {/* Intro/About Section Snippet */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+      <section className="py-16 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: '#F4F8F8' }}>
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div>
             <h2 className="text-3xl font-bold text-navy-dark mb-6">Why Choose Port Credit Physio?</h2>
@@ -76,9 +97,12 @@ export default function Home() {
               </Button>
             </div>
           </div>
-          <div className="bg-gray-200 rounded-lg h-80 w-full flex items-center justify-center text-gray-400">
-            {/* Placeholder for an image */}
-            <span>Clinic Interior Image Placeholder</span>
+          <div className="relative rounded-lg h-80 w-full overflow-hidden">
+            <img 
+              src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=800&h=600&fit=crop&q=80"
+              alt="Modern physiotherapy clinic interior with treatment tables and equipment"
+              className="w-full h-full object-cover"
+            />
           </div>
         </div>
       </section>
@@ -90,7 +114,7 @@ export default function Home() {
           <p className="text-xl mb-10 text-gray-100">
             Book your appointment online today and take the first step towards better health.
           </p>
-          <Button href="#" variant="primary" className="bg-white text-steel-blue hover:bg-gray-100 hover:text-navy-dark font-bold text-lg px-10 py-4 shadow-lg">
+          <Button href="#" variant="primary" className="!font-bold text-lg px-10 py-4 shadow-lg" style={{ backgroundColor: '#96B9B9', color: 'white' }}>
             Book Appointment
           </Button>
         </div>
