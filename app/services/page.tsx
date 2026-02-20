@@ -36,7 +36,7 @@ export default function Services() {
     ]
 
     return (
-        <div className="min-h-screen py-12 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: '#F4F8F8' }}>
+        <div className="bg-white-shade min-h-screen py-12 px-4 sm:px-6 lg:px-8">
             <div className="max-w-7xl mx-auto">
                 <div className="text-center mb-12">
                     <h1 className="text-4xl font-bold text-navy-dark mb-4">Our Services</h1>
@@ -58,7 +58,7 @@ export default function Services() {
                     ))}
                 </div>
 
-                <div className="mt-16 text-center p-8 rounded-lg shadow-sm" style={{ backgroundColor: '#F4F8F8' }}>
+                <div className="mt-16 text-center p-8 rounded-lg shadow-sm bg-white-shade">
                     <h2 className="text-2xl font-bold text-navy-dark mb-4">Unsure which service is right for you?</h2>
                     <p className="text-gray-600 mb-8">
                         Contact us for a consultation and we&apos;ll help you determine the best treatment plan for your needs.

@@ -15,7 +15,7 @@ export default function Navbar() {
     ];
 
     return (
-        <nav style={{ backgroundColor: '#F4F8F8' }} className="shadow-sm sticky top-0 z-50">
+        <nav className="bg-white-shade shadow-sm" style={{ backgroundColor: '#f4f7f8' }}>
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between h-20">
                     <div className="flex items-center">
@@ -24,7 +24,7 @@ export default function Navbar() {
                                 src="/logo.svg" 
                                 alt="Port Credit Physio Logo" 
                                 className="h-40 w-auto"
-                                style={{ maxWidth: '350px' }}
+                                style={{ maxWidth: '350px', marginTop: '10px' }}
                             />
                         </Link>
                     </div>
@@ -39,7 +39,7 @@ export default function Navbar() {
                                 {link.name}
                             </Link>
                         ))}
-                        <Button href="#" variant="primary" style={{ backgroundColor: '#96B9B9', color: 'white' }}>
+                        <Button href="#" variant="primary" style={{ backgroundColor: '#14B8A6', color: 'white' }}>
                             Book Appointment
                         </Button>
                     </div>
@@ -68,7 +68,7 @@ export default function Navbar() {
 
             {/* Mobile menu */}
             {isOpen && (
-                <div style={{ backgroundColor: '#F4F8F8' }} className="md:hidden border-t border-gray-100">
+                <div className="bg-white-shade md:hidden border-t border-gray-100">
                     <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                         {navLinks.map((link) => (
                             <Link
@@ -81,7 +81,7 @@ export default function Navbar() {
                             </Link>
                         ))}
                         <div className="pt-4 pb-2">
-                            <Button href="#" variant="primary" className="w-full" style={{ backgroundColor: '#96B9B9', color: 'white' }}>
+                            <Button href="#" variant="primary" className="w-full" style={{ backgroundColor: '#14B8A6', color: 'white' }}>
                                 Book Appointment
                             </Button>
                         </div>

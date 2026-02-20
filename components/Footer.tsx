@@ -23,10 +23,10 @@ export default function Footer() {
                     <div>
                         <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
                         <ul className="space-y-2 text-gray-300">
-                            <li>123 Example Street</li>
-                            <li>Port Credit, Mississauga, ON</li>
-                            <li>Phone: (555) 123-4567</li>
-                            <li>Email: info@portcreditphysio.com</li>
+                            <li>268 Lakeshore Rd East</li>
+                            <li>Mississauga, ON L5G 1H1</li>
+                            <li>Phone: Coming Soon</li>
+                            <li>Email: info@portcreditphysio.ca</li>
                         </ul>
                     </div>
                 </div>
