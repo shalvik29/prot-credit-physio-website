@@ -8,6 +8,7 @@ interface ButtonProps {
     variant?: 'primary' | 'secondary' | 'outline';
     className?: string;
     type?: 'button' | 'submit' | 'reset';
+    style?: React.CSSProperties;
 }
 
 export default function Button({
@@ -17,6 +18,7 @@ export default function Button({
     variant = 'primary',
     className = '',
     type = 'button',
+    style,
 }: ButtonProps) {
     const baseStyles =
         'inline-flex items-center justify-center px-6 py-3 border text-base font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 transition-colors duration-200';
@@ -31,14 +33,14 @@ export default function Button({
 
     if (href) {
         return (
-            <Link href={href} className={styles}>
+            <Link href={href} className={styles} style={style}>
                 {children}
             </Link>
         );
     }
 
     return (
-        <button type={type} className={styles} onClick={onClick}>
+        <button type={type} className={styles} onClick={onClick} style={style}>
             {children}
         </button>
     );

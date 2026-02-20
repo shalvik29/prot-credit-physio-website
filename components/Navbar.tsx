@@ -15,12 +15,17 @@ export default function Navbar() {
     ];
 
     return (
-        <nav className="bg-white shadow-sm sticky top-0 z-50">
+        <nav className="bg-white-shade shadow-sm" style={{ backgroundColor: '#f4f7f8' }}>
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between h-20">
                     <div className="flex items-center">
-                        <Link href="/" className="flex-shrink-0 flex items-center">
-                            <span className="text-2xl font-bold text-navy-dark">Port Credit Physio</span>
+                        <Link href="/" className="flex-shrink-0 flex items-center py-2">
+                            <img 
+                                src="/logo.svg" 
+                                alt="Port Credit Physio Logo" 
+                                className="h-40 w-auto"
+                                style={{ maxWidth: '350px', marginTop: '10px' }}
+                            />
                         </Link>
                     </div>
 
@@ -34,8 +39,8 @@ export default function Navbar() {
                                 {link.name}
                             </Link>
                         ))}
-                        <Button href="#" variant="primary">
-                            Book Now
+                        <Button href="#" variant="primary" style={{ backgroundColor: '#14B8A6', color: 'white' }}>
+                            Book Appointment
                         </Button>
                     </div>
 
@@ -63,7 +68,7 @@ export default function Navbar() {
 
             {/* Mobile menu */}
             {isOpen && (
-                <div className="md:hidden bg-white border-t border-gray-100">
+                <div className="bg-white-shade md:hidden border-t border-gray-100">
                     <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                         {navLinks.map((link) => (
                             <Link
@@ -76,8 +81,8 @@ export default function Navbar() {
                             </Link>
                         ))}
                         <div className="pt-4 pb-2">
-                            <Button href="#" variant="primary" className="w-full">
-                                Book Now
+                            <Button href="#" variant="primary" className="w-full" style={{ backgroundColor: '#14B8A6', color: 'white' }}>
+                                Book Appointment
                             </Button>
                         </div>
                     </div>
