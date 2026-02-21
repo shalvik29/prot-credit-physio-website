@@ -35,13 +35,13 @@ export default function Contact() {
                             </div>
                         </div>
 
-                        {/* Google Maps - Temporarily disabled until API key is configured */}
-                        {/* <div className="w-full h-80 rounded-lg overflow-hidden">
-                            <GoogleMap 
+                        {/* Google Maps */}
+                        <div className="w-full h-80 rounded-lg overflow-hidden">
+                            <GoogleMap
                                 address="268 Lakeshore Rd East, Mississauga, ON L5G 1H1"
                                 className="h-full"
                             />
-                        </div> */}
+                        </div>
                     </div>
 
                     {/* Contact Form */}
