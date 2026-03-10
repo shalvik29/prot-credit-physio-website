@@ -19,7 +19,11 @@ export default function AnnouncementBanner() {
     if (!isVisible) return null;
 
     return (
-        <div className="bg-[#2DD4BF] text-black py-3 px-4 shadow-md" style={{ backgroundColor: '#2DD4BF' }}>
+        <div 
+            data-announcement-banner
+            className="fixed top-0 left-0 right-0 z-[60] bg-[#2DD4BF] text-black py-3 px-4 shadow-md" 
+            style={{ backgroundColor: '#2DD4BF' }}
+        >
             <div className="max-w-7xl mx-auto flex items-center justify-between gap-3">
                 <div className="flex-1 text-center md:text-left">
                     <span className="font-bold text-sm md:text-base">
