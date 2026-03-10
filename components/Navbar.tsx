@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import Button from './ui/Button';
 import { usePathname } from 'next/navigation';
 import { servicesData } from '@/lib/servicesData';
@@ -19,10 +20,10 @@ export default function Navbar() {
     useEffect(() => {
         const handleScroll = () => {
             const currentScrollY = window.scrollY;
-            
+
             // Determine if scrolled past threshold
             setIsScrolled(currentScrollY > 50);
-            
+
             // Show/hide navbar based on scroll direction
             if (currentScrollY > lastScrollY && currentScrollY > 100) {
                 // Scrolling down - hide navbar
@@ -31,7 +32,7 @@ export default function Navbar() {
                 // Scrolling up - show navbar
                 setIsVisible(true);
             }
-            
+
             setLastScrollY(currentScrollY);
         };
 
@@ -43,7 +44,7 @@ export default function Navbar() {
         updateBannerHeight();
         window.addEventListener('scroll', handleScroll, { passive: true });
         window.addEventListener('resize', updateBannerHeight);
-        
+
         // Watch for banner changes
         const observer = new MutationObserver(updateBannerHeight);
         observer.observe(document.body, { childList: true, subtree: true });
@@ -87,9 +88,8 @@ export default function Navbar() {
         }
     };
 
-    const navbarClasses = `fixed left-0 right-0 z-50 transition-all duration-300 ${getNavbarClasses()} ${
-        isVisible ? 'translate-y-0' : '-translate-y-full'
-    }`;
+    const navbarClasses = `fixed left-0 right-0 z-50 transition-all duration-300 ${getNavbarClasses()} ${isVisible ? 'translate-y-0' : '-translate-y-full'
+        }`;
 
     // Text colors - always dark since navbar is white/light
     const textClasses = 'text-navy-medium hover:text-navy-dark';
@@ -104,18 +104,21 @@ export default function Navbar() {
                 <div className="flex justify-between h-20">
                     <div className="flex items-center">
                         <Link href="/" className="flex-shrink-0 flex items-center py-2">
-                            <img 
-                                src="/logo.svg" 
-                                alt="Port Credit Physio Logo" 
+                            <Image
+                                src="/logo.svg"
+                                alt="Port Credit Physio Logo"
+                                width={350}
+                                height={160}
                                 className="h-40 w-auto transition-all duration-300"
                                 style={{ maxWidth: '350px', marginTop: '10px' }}
+                                priority
                             />
                         </Link>
                     </div>
 
                     <div className="hidden md:flex md:items-center md:space-x-8">
                         {navLinks.map((link) => (
-                            <div 
+                            <div
                                 key={link.name}
                                 className="relative"
                                 onMouseEnter={() => link.hasDropdown && setShowServicesDropdown(true)}
@@ -123,9 +126,8 @@ export default function Navbar() {
                             >
                                 <Link
                                     href={link.href}
-                                    className={`${textClasses} px-3 py-2 rounded-md text-sm font-medium transition-colors ${
-                                        isActiveLink(link.href) ? 'border-b-2 border-steel-blue' : ''
-                                    }`}
+                                    className={`${textClasses} px-3 py-2 rounded-md text-sm font-medium transition-colors ${isActiveLink(link.href) ? 'border-b-2 border-steel-blue' : ''
+                                        }`}
                                 >
                                     {link.name}
                                     {link.hasDropdown && (
@@ -134,7 +136,7 @@ export default function Navbar() {
                                         </svg>
                                     )}
                                 </Link>
-                                
+
                                 {/* Services Dropdown */}
                                 {link.hasDropdown && showServicesDropdown && (
                                     <div className="absolute left-0 top-full mt-2 w-64 bg-white rounded-lg shadow-xl border border-gray-100 py-4 z-50">
@@ -201,14 +203,13 @@ export default function Navbar() {
                             <div key={link.name}>
                                 <Link
                                     href={link.href}
-                                    className={`block ${mobileTextClasses} px-3 py-2 rounded-md text-base font-medium ${
-                                        isActiveLink(link.href) ? 'bg-steel-blue/10 border-l-4 border-steel-blue' : ''
-                                    }`}
+                                    className={`block ${mobileTextClasses} px-3 py-2 rounded-md text-base font-medium ${isActiveLink(link.href) ? 'bg-steel-blue/10 border-l-4 border-steel-blue' : ''
+                                        }`}
                                     onClick={() => !link.hasDropdown && setIsOpen(false)}
                                 >
                                     {link.name}
                                 </Link>
-                                
+
                                 {/* Mobile Services Submenu */}
                                 {link.hasDropdown && (
                                     <div className="ml-4 mt-2 space-y-1">

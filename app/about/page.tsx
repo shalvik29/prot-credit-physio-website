@@ -45,7 +45,7 @@ export default function About() {
                         <div className="bg-white-shade p-8 rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
                             <h3 className="text-2xl font-bold text-navy-dark mb-4">Active Partnership</h3>
                             <p className="text-gray-700 leading-relaxed">
-                                We don't just treat you; we coach you. Your effort is the engine of your recovery. You're not a passive patient—you're an active partner in your own healing.
+                                We don&apos;t just treat you; we coach you. Your effort is the engine of your recovery. You&apos;re not a passive patient—you&apos;re an active partner in your own healing.
                             </p>
                         </div>
 
@@ -59,14 +59,14 @@ export default function About() {
                         <div className="bg-white-shade p-8 rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
                             <h3 className="text-2xl font-bold text-navy-dark mb-4">Total Independence</h3>
                             <p className="text-gray-700 leading-relaxed">
-                                Our goal isn't just 'less pain'—it's giving you the confidence to move without help. You'll leave our clinic with a 'User Manual' for your body and the tools to stay pain-free.
+                                Our goal isn&apos;t just &apos;less pain&apos;—it&apos;s giving you the confidence to move without help. You&apos;ll leave our clinic with a &apos;User Manual&apos; for your body and the tools to stay pain-free.
                             </p>
                         </div>
 
                         <div className="bg-white-shade p-8 rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
                             <h3 className="text-2xl font-bold text-navy-dark mb-4">Community First</h3>
                             <p className="text-gray-700 leading-relaxed">
-                                Whether in our clinic or through in-home assessments, we meet you where you are. Port Credit is our home, and we're committed to the health of our neighbors.
+                                Whether in our clinic or through in-home assessments, we meet you where you are. Port Credit is our home, and we&apos;re committed to the health of our neighbors.
                             </p>
                         </div>
                     </div>

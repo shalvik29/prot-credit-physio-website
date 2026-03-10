@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 interface ServiceCardProps {
     title: string;
@@ -19,10 +20,11 @@ export default function ServiceCard({
         <div className={`rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 border border-gray-100 overflow-hidden ${className}`} style={{ backgroundColor: '#F4F8F8' }}>
             {imageUrl && (
                 <div className="w-full h-48 overflow-hidden">
-                    <img 
-                        src={imageUrl} 
+                    <Image
+                        src={imageUrl}
                         alt={title}
-                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                        fill
+                        className="object-cover group-hover:scale-105 transition-transform duration-300"
                     />
                 </div>
             )}
