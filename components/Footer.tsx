@@ -4,7 +4,7 @@ export default function Footer() {
     return (
         <footer className="bg-navy-dark text-white">
             <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
                     <div>
                         <h3 className="text-xl font-bold mb-4">Port Credit Physio</h3>
                         <p className="text-gray-300 text-sm">
@@ -23,10 +23,28 @@ export default function Footer() {
                     <div>
                         <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
                         <ul className="space-y-2 text-gray-300">
-                            <li>268 Lakeshore Rd East</li>
+                            <li>301 - 268 Lakeshore Rd East</li>
                             <li>Mississauga, ON L5G 1H1</li>
                             <li>Phone: Coming Soon</li>
+                            <li>Fax: Coming Soon</li>
                             <li>Email: info@portcreditphysio.ca</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 className="text-lg font-semibold mb-4">Hours</h3>
+                        <ul className="space-y-2 text-gray-300 text-sm">
+                            <li className="flex justify-between gap-4">
+                                <span>Monday – Thursday</span>
+                                <span>10:00am – 8:00pm</span>
+                            </li>
+                            <li className="flex justify-between gap-4">
+                                <span>Friday – Saturday</span>
+                                <span>10:00am – 4:00pm</span>
+                            </li>
+                            <li className="flex justify-between gap-4">
+                                <span>Sunday</span>
+                                <span>10:00am – 2:00pm</span>
+                            </li>
                         </ul>
                     </div>
                 </div>

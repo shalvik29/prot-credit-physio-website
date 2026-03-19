@@ -12,6 +12,24 @@ export interface Service {
     title: string
     description: string
   }[]
+  techniques?: {
+    sectionTitle: string
+    intro: string
+    items: string[]
+  }
+  process?: {
+    sectionTitle: string
+    intro?: string
+    steps: {
+      number: string
+      title: string
+      description: string
+    }[]
+  }
+  highlight?: {
+    title: string
+    description: string
+  }
   duration?: string
   frequency?: string
 }
@@ -22,8 +40,8 @@ export const servicesData: Service[] = [
     title: 'Physiotherapy',
     subtitle: 'The Science of Movement',
     description: 'Physiotherapy: The Science of Movement',
-    image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&h=600&fit=crop&q=80',
-    heroImage: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1920&h=1080&fit=crop&q=80',
+    image: '/Physiotherapy.jpg',
+    heroImage: '/Physiotherapy.jpg',
     fullDescription: `Physiotherapy isn't just recovery—it's the path to maximizing your physical strength and functional freedom. At Port Credit Physio, we treat the whole person, not just the symptom.
 
 Whether you're managing chronic back pain, recovering from a sports injury, or rebuilding after surgery, our physiotherapists use evidence-based techniques including the McKenzie Method® (proven for back pain and sciatica), Graston Technique® (to break down scar tissue), and personalized exercise prescription.
@@ -31,12 +49,18 @@ Whether you're managing chronic back pain, recovering from a sports injury, or r
 Move from pain to performance through active partnership and clinical excellence.`,
     benefits: [],
     conditions: [
-      'Lower back pain & sciatica',
-      'Neck pain & whiplash',
-      'Shoulder injuries (frozen shoulder, rotator cuff)',
-      'Workplace injuries (WSIB)',
-      'Chronic tendinitis',
-      'Post-surgical recovery'
+      'Sprains and strains',
+      'Tendonitis',
+      'Muscle tears and stiffness',
+      'Shoulder and hip pain',
+      'Shin splints',
+      'Arthritis and joint pain',
+      'Fibromyalgia',
+      'Sciatica',
+      'Carpal tunnel syndrome',
+      'Vertigo and balance issues',
+      'Tennis elbow & golfer’s elbow',
+      'Ankle sprains',
     ],
     whatToExpect: []
   },
@@ -57,15 +81,25 @@ Stop the spinning, restore confidence, and get you back to living without fear o
       'General imbalance & lightheadedness',
       'Post-concussion dizziness'
     ],
-    whatToExpect: []
+    whatToExpect: [],
+    techniques: {
+      sectionTitle: 'What Techniques Are Used In Vestibular Rehabilitation?',
+      intro: 'There are multiple types of exercises used in vestibular rehabilitation.',
+      items: [
+        'Habituation',
+        'Gaze stabilization',
+        'Balance training',
+        'Postural training and neck mobility',
+      ]
+    }
   },
   {
     id: 'sports-injury-rehabilitation',
     title: 'Sports Injury Rehabilitation',
     subtitle: 'Return Stronger, Not Just Pain-Free',
     description: 'Return Stronger, Not Just Pain-Free',
-    image: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&h=600&fit=crop&q=80',
-    heroImage: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=1920&h=1080&fit=crop&q=80',
+    image: '/SportsInjury.jpg',
+    heroImage: '/SportsInjury.jpg',
     fullDescription: `Whether you're a weekend warrior on the Waterfront Trail or a competitive athlete, sports injuries demand specialized care. We don't just get you back on the field—we get you back stronger.
 
 Advanced biomechanical analysis, Kinesio Taping, and injury prevention strategies used by professional athletes. We focus on functional return-to-sport protocols.`,
@@ -93,18 +127,15 @@ Whether you've had a Total Knee Replacement, Hip Arthroplasty, or Rotator Cuff R
 
 • Building Functional Strength: We don't just exercise—we train you for the movements of daily life (climbing stairs, getting in the car, walking the Village).
 
-• Swelling & Pain Management: Kinesio Taping and Shockwave Therapy (when appropriate) to accelerate healing.
+• Proprioception & Movement Awareness: Re-training your body’s "position sense" to ensure your brain and joints are communicating effectively.
 
-Our Promise: Your new joint performs even better than the old one. We guide you from your first post-op day to your first pain-free walk by the lake.`,
+• Balance & Stability Training: Using our Bosu® trainers and balance boards to restore confidence in your movements and prevent future falls or re-injury.
+
+• Mobile In-Home Assessments: If you are unable to commute immediately following surgery, we offer in-home assessment and treatment to ensure your recovery starts on day one in the comfort of your own home.
+
+Our Clinical Commitment: Your new joint performs even better than the old one. We guide you from your first post-op day to your first pain-free walk by the lake.`,
     benefits: [],
-    conditions: [
-      'Total Knee Replacement',
-      'Hip Arthroplasty',
-      'Rotator Cuff Repair',
-      'ACL Reconstruction',
-      'Spinal Surgery',
-      'Other orthopedic procedures'
-    ],
+    conditions: [],
     whatToExpect: []
   },
   {
@@ -152,14 +183,59 @@ Massage therapy works beautifully alongside physiotherapy, helping to:
 Perfect for: Post-workout recovery, chronic pain management, injury rehabilitation, and stress relief.`,
     benefits: [],
     conditions: [
-      'Post-workout recovery',
-      'Chronic pain management',
-      'Injury rehabilitation',
-      'Stress relief',
-      'Muscle tension',
-      'Trigger points'
+      'Chronic pain and fibromyalgia',
+      'Tendonitis',
+      'Plantar fasciitis',
+      'Shin splints',
+      'Frozen shoulder',
+      'Stress, anxiety, and poor sleep'
     ],
     whatToExpect: []
+  },
+  {
+    id: 'workplace-injury-rehabilitation',
+    title: 'Workplace Injury Rehabilitation (WSIB)',
+    subtitle: 'Recover at Work. Return with Confidence.',
+    description: 'Recover at Work. Return with Confidence.',
+    image: 'https://images.unsplash.com/photo-1530026405186-ed1f139313f8?w=800&h=600&fit=crop&q=80',
+    heroImage: 'https://images.unsplash.com/photo-1530026405186-ed1f139313f8?w=1920&h=1080&fit=crop&q=80',
+    fullDescription: `What is WSIB?
+The Workplace Safety and Insurance Board (WSIB) is a provincial agency in Ontario that provides support and insurance for workers who have been injured on the job or have developed an occupational illness.
+
+As a Registered WSIB Provider in Port Credit, we specialize in managing work-related musculoskeletal injuries—such as repetitive strains, back pain from lifting, or falls—helping you return to your daily routine safely and effectively`,
+    benefits: [],
+    conditions: [],
+    whatToExpect: [],
+    process: {
+      sectionTitle: 'Our WSIB Recovery Process',
+      intro: 'We take the stress out of your claim by handling the clinical paperwork and providing direct billing, so you can focus entirely on your healing.',
+      steps: [
+        {
+          number: '1',
+          title: 'Initial Assessment',
+          description: 'Your recovery begins with a comprehensive evaluation by a physiotherapist in Mississauga. We assess your injury, document the functional limitations related to your job, and design a customized treatment plan tailored to your workplace demands.',
+        },
+        {
+          number: '2',
+          title: 'WSIB Documentation & Approval',
+          description: 'Navigating claims can be complex. We assist you by submitting the necessary medical paperwork (Form 8) and clinical reports directly to WSIB to streamline your approval process.',
+        },
+        {
+          number: '3',
+          title: 'Evidence-Based Treatment',
+          description: 'Once your claim is active, we utilize modern techniques—including The McKenzie Method, manual therapy, and functional strengthening—to reduce pain and restore your ability to work.',
+        },
+        {
+          number: '4',
+          title: 'Collaborative Return-to-Work Plan',
+          description: 'We act as the bridge between you, your employer, and your WSIB case manager. Our goal is to ensure a safe, gradual, and successful return to your professional duties through specific corrective strategies.',
+        },
+      ],
+    },
+    highlight: {
+      title: 'No Out-of-Pocket Costs: We Direct Bill',
+      description: 'We believe financial stress shouldn\'t hinder your recovery. Our clinic direct bills WSIB for all approved claims. This means you can receive elite-level care with no out-of-pocket expenses for your treatments.',
+    },
   }
 ]
 

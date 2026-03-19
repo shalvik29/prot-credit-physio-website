@@ -8,7 +8,9 @@ export default function Home() {
     'Neck & Head Pain',
     'Shoulder & Upper Body Injuries',
     'Lower Body & Joint Injuries',
+    'Post- Op Rehabilitation',
     'Sports Injuries',
+    'Fibromyalgia and Chronic pain',
     'Chronic Pain & Health Conditions',
     'Balance & Vestibular Conditions',
     'Rehabilitation & Recovery'
@@ -18,7 +20,7 @@ export default function Home() {
     {
       id: 'physiotherapy',
       title: 'Physiotherapy',
-      image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&h=600&fit=crop&q=80'
+      image: '/Physiotherapy.jpg'
     },
     {
       id: 'vestibular-rehabilitation',
@@ -28,7 +30,7 @@ export default function Home() {
     {
       id: 'sports-injury-rehabilitation',
       title: 'Sports Injury Rehabilitation',
-      image: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&h=600&fit=crop&q=80'
+      image: '/SportsInjury.jpg'
     }
   ]
 
@@ -85,7 +87,7 @@ export default function Home() {
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-7xl mx-auto text-center">
           <p className="text-sm uppercase tracking-wider text-gray-500 mb-4">
-            Personalized Physiotherapy for Lasting Recovery
+            Precision Care, Meaningful Outcomes.
           </p>
           <h2 className="text-4xl md:text-5xl font-bold text-navy-dark mb-8">
             Leading Physiotherapy Clinic in Port Credit & Mississauga
@@ -250,6 +252,69 @@ export default function Home() {
                 Contact Us
               </Button>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Convenient Care Options Section */}
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl md:text-5xl font-bold text-navy-dark">Convenient Care Options</h2>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+            {/* Direct Billing */}
+            <div className="bg-white-shade rounded-xl p-8 flex gap-5">
+              <div className="text-4xl flex-shrink-0">💳</div>
+              <div>
+                <h3 className="text-xl font-bold text-navy-dark mb-2">Direct Billing</h3>
+                <p className="text-gray-600 leading-relaxed">We take the paperwork off your plate! Enjoy hassle-free recovery with direct billing to all major insurance providers.</p>
+              </div>
+            </div>
+
+            {/* Free 15-Minute Recovery Call */}
+            <div className="bg-white-shade rounded-xl p-8 flex gap-5">
+              <div className="text-4xl flex-shrink-0">📞</div>
+              <div>
+                <h3 className="text-xl font-bold text-navy-dark mb-2">Free 15-Minute Recovery Call</h3>
+                <p className="text-gray-600 leading-relaxed">Not sure if physiotherapy is right for you? Book a no-obligation chat to discuss your injury and discover how we can help you regain your independence.</p>
+              </div>
+            </div>
+
+            {/* Flexible Access */}
+            <div className="bg-white-shade rounded-xl p-8 flex gap-5">
+              <div className="text-4xl flex-shrink-0">🏥</div>
+              <div>
+                <h3 className="text-xl font-bold text-navy-dark mb-3">Flexible Access</h3>
+                <p className="text-gray-600 leading-relaxed mb-4">Choose the care that fits your lifestyle! We offer:</p>
+                <div className="flex flex-col gap-2">
+                  <div className="flex items-center gap-3">
+                    <span className="text-2xl">🏥</span>
+                    <span className="text-gray-700">In-Clinic — in the heart of Port Credit</span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <span className="text-2xl">🏠</span>
+                    <span className="text-gray-700">In-Home visits for post-op patients only</span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <span className="text-2xl">💻</span>
+                    <span className="text-gray-700">Virtual Consultations for your convenience</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Multidisciplinary Excellence */}
+            <div className="bg-white-shade rounded-xl p-8 flex gap-5">
+              <div className="text-4xl flex-shrink-0">🏢</div>
+              <div>
+                <h3 className="text-xl font-bold text-navy-dark mb-2">Multidisciplinary Excellence</h3>
+                <p className="text-gray-600 leading-relaxed">Access a range of services under one roof at our 268 Lakeshore Road E location. Benefit from Physiotherapy, Chiropractic, and Acupuncture to support your comprehensive recovery.</p>
+              </div>
+            </div>
+
           </div>
         </div>
       </section>
