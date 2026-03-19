@@ -15,11 +15,15 @@ export default function Contact() {
                             <div className="space-y-6 text-gray-600">
                                 <div>
                                     <h3 className="font-semibold text-navy-dark">Address</h3>
-                                    <p>268 Lakeshore Rd East</p>
+                                    <p>301 - 268 Lakeshore Rd East</p>
                                     <p>Mississauga, ON L5G 1H1</p>
                                 </div>
                                 <div>
                                     <h3 className="font-semibold text-navy-dark">Phone</h3>
+                                    <p>Coming Soon</p>
+                                </div>
+                                <div>
+                                    <h3 className="font-semibold text-navy-dark">Fax</h3>
                                     <p>Coming Soon</p>
                                 </div>
                                 <div>

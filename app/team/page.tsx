@@ -1,56 +1,34 @@
-import Image from 'next/image'
 import Button from '@/components/ui/Button'
 
 export default function Team() {
     const teamMembers = [
         {
-            name: 'Dr. Sarah Johnson',
-            role: 'Lead Physiotherapist',
-            credentials: 'PT, DPT, OCS',
-            image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=400&h=400&fit=crop&q=80',
-            bio: 'With over 15 years of experience, Dr. Johnson specializes in sports rehabilitation and orthopedic physiotherapy.',
-            specialties: ['Sports Injuries', 'Post-Surgical Rehab', 'Manual Therapy']
+            name: 'Simoni',
+            role: 'Registered Physiotherapist',
+            credentials: 'PT',
+            tagline: 'The Heart of Your Recovery',
+            bio: `Simoni's approach to physiotherapy is rooted in a single, powerful belief: Don't wait for pain to become your 'new normal.'
+
+Since launching her private practice in 2021, Simoni has dedicated herself to helping patients reclaim their lives through a blend of skilled manual therapy and active, movement-based rehabilitation. She believes recovery is a partnership—your effort + her expertise = transformation.`,
+            education: 'Bachelor of Physiotherapy, CHARUSAT University (India)',
+            specializations: [
+                'The Spine & Joints: Trained in the McKenzie Method® (Part A) for specialized back pain, herniated discs, sciatica, and chronic back pain. And Part B for neck and thoracic spine.',
+                'Certified in advanced soft tissue level I',
+                'Shoulder Mastery: Specialist training in shoulder sensitivity and Adhesive Capsulitis (Frozen Shoulder)—one of her signature areas.',
+                'Advanced Modalities: Certified in Acupuncture (Basic & Upper Limb), Shockwave Therapy, and Kinesio Taping (FMT).',
+                'Return-to-Work & Surgical Recovery: As a Certified Functional Capacity Evaluator (FCE), she\'s an expert at helping WSIB clients navigate the path back to employment. She has special interest in Total Knee and Hip Replacement rehab, guiding patients through both pre- and post-operative phases.',
+            ],
+            whyPatients: `Simoni doesn't just treat symptoms; she builds independence. Her goal is to work manually and actively alongside you to reach your optimum health. Whether you're recovering from surgery or a workplace injury, Simoni's mission is to see you walk out of our doors with a stronger body and a much brighter smile.`,
+            philosophy: 'Move today so you can flourish tomorrow.',
+            specialties: [
+                'Frozen Shoulder & Adhesive Capsulitis',
+                'Chronic Back Pain & Sciatica',
+                'Vestibular Rehabilitation & Dizziness',
+                'Post-Op Joint Recovery (Knee, Hip, Shoulder)',
+                'WSIB & Workplace Injury Rehab',
+                'Kinesio Taping',
+            ],
         },
-        {
-            name: 'Michael Chen',
-            role: 'Registered Massage Therapist',
-            credentials: 'RMT',
-            image: 'https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=400&h=400&fit=crop&q=80',
-            bio: 'Michael brings a holistic approach to massage therapy, combining traditional techniques with modern practices.',
-            specialties: ['Deep Tissue', 'Sports Massage', 'Trigger Point Therapy']
-        },
-        {
-            name: 'Dr. Emily Rodriguez',
-            role: 'Chiropractor',
-            credentials: 'DC',
-            image: 'https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=400&h=400&fit=crop&q=80',
-            bio: 'Dr. Rodriguez focuses on spinal health and wellness, helping patients achieve optimal function and pain relief.',
-            specialties: ['Spinal Adjustments', 'Posture Correction', 'Headache Treatment']
-        },
-        {
-            name: 'James Wilson',
-            role: 'Physiotherapist',
-            credentials: 'PT, MSc',
-            image: 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&h=400&fit=crop&q=80',
-            bio: 'James specializes in chronic pain management and vestibular rehabilitation with a patient-centered approach.',
-            specialties: ['Chronic Pain', 'Vestibular Rehab', 'Geriatric Care']
-        },
-        {
-            name: 'Dr. Lisa Patel',
-            role: 'Acupuncturist',
-            credentials: 'R.Ac, TCM',
-            image: 'https://images.unsplash.com/photo-1519823551278-64ac92734fb1?w=400&h=400&fit=crop&q=80',
-            bio: 'Dr. Patel integrates traditional Chinese medicine with modern healthcare to provide comprehensive treatment.',
-            specialties: ['Pain Management', 'Stress Relief', 'Traditional Chinese Medicine']
-        },
-        {
-            name: 'Amanda Foster',
-            role: 'Pelvic Floor Physiotherapist',
-            credentials: 'PT, DPT',
-            image: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=400&h=400&fit=crop&q=80',
-            bio: 'Amanda provides specialized care for pelvic health issues with compassion and expertise.',
-            specialties: ['Pelvic Floor Dysfunction', 'Pre/Post-natal Care', 'Incontinence']
-        }
     ]
 
     return (
@@ -65,98 +43,81 @@ export default function Team() {
                 </div>
             </section>
 
-            {/* Team Introduction */}
-            <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
-                <div className="max-w-4xl mx-auto text-center">
-                    <h2 className="text-3xl font-bold text-navy-dark mb-6">Our Expert Team</h2>
-                    <p className="text-lg text-gray-600 leading-relaxed">
-                        Our multidisciplinary team consists of highly trained and experienced healthcare professionals who are passionate about helping you achieve your health goals. Each team member brings unique expertise and a commitment to providing personalized, evidence-based care.
-                    </p>
-                </div>
-            </section>
-
-            {/* Team Members Grid */}
+            {/* Team Members */}
             <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white-shade">
-                <div className="max-w-7xl mx-auto">
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        {teamMembers.map((member, index) => (
-                            <div 
-                                key={index}
-                                className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2"
-                            >
-                                <div className="relative h-80">
-                                    <Image 
-                                        src={member.image}
-                                        alt={member.name}
-                                        fill
-                                        className="object-cover"
-                                    />
+                <div className="max-w-5xl mx-auto flex flex-col gap-12">
+                    {teamMembers.map((member, index) => (
+                        <div key={index} className="bg-white rounded-xl shadow-md overflow-hidden">
+                            {/* Header */}
+                            <div className="bg-navy-dark text-white p-8 flex items-center gap-6">
+                                <div className="w-20 h-20 rounded-full bg-steel-blue flex items-center justify-center flex-shrink-0">
+                                    <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                                    </svg>
                                 </div>
-                                <div className="p-6">
-                                    <h3 className="text-2xl font-bold text-navy-dark mb-1">{member.name}</h3>
-                                    <p className="text-steel-blue font-semibold mb-1">{member.role}</p>
-                                    <p className="text-sm text-gray-500 mb-4">{member.credentials}</p>
-                                    <p className="text-gray-600 mb-4 leading-relaxed">{member.bio}</p>
-                                    
-                                    <div className="border-t border-gray-200 pt-4">
-                                        <p className="text-sm font-semibold text-navy-dark mb-2">Specialties:</p>
-                                        <div className="flex flex-wrap gap-2">
-                                            {member.specialties.map((specialty, idx) => (
-                                                <span 
-                                                    key={idx}
-                                                    className="text-xs bg-steel-blue/10 text-steel-blue px-3 py-1 rounded-full"
-                                                >
-                                                    {specialty}
-                                                </span>
-                                            ))}
-                                        </div>
+                                <div>
+                                    <h2 className="text-2xl font-bold">{member.name}</h2>
+                                    <p className="text-steel-blue font-semibold">{member.role} — {member.credentials}</p>
+                                    <p className="text-gray-300 italic mt-1">&ldquo;{member.tagline}&rdquo;</p>
+                                </div>
+                            </div>
+
+                            <div className="p-8 flex flex-col gap-8">
+                                {/* Bio */}
+                                <p className="text-gray-600 leading-relaxed whitespace-pre-line">{member.bio}</p>
+
+                                {/* Education */}
+                                <div>
+                                    <h3 className="text-lg font-bold text-navy-dark mb-2">Education</h3>
+                                    <p className="text-gray-600">{member.education}</p>
+                                </div>
+
+                                {/* Specializations */}
+                                <div>
+                                    <h3 className="text-lg font-bold text-navy-dark mb-3">Advanced Clinical Specializations</h3>
+                                    <ul className="flex flex-col gap-3">
+                                        {member.specializations.map((item, i) => (
+                                            <li key={i} className="flex gap-3 text-gray-600">
+                                                <div className="w-2 h-2 bg-steel-blue rounded-full flex-shrink-0 mt-2"></div>
+                                                <span className="leading-relaxed">{item}</span>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </div>
+
+                                {/* Why Patients Love Her */}
+                                <div>
+                                    <h3 className="text-lg font-bold text-navy-dark mb-2">Why Patients Love Her</h3>
+                                    <p className="text-gray-600 leading-relaxed">{member.whyPatients}</p>
+                                </div>
+
+                                {/* Philosophy */}
+                                <div className="bg-white-shade rounded-lg p-5 border-l-4 border-steel-blue">
+                                    <p className="text-navy-dark font-semibold italic">Philosophy: &ldquo;{member.philosophy}&rdquo;</p>
+                                </div>
+
+                                {/* Specialties */}
+                                <div className="border-t border-gray-200 pt-6">
+                                    <h3 className="text-lg font-bold text-navy-dark mb-4">Specialties</h3>
+                                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                                        {member.specialties.map((specialty, idx) => (
+                                            <div
+                                                key={idx}
+                                                className="flex items-center gap-3 bg-white-shade border border-steel-blue/20 rounded-lg px-4 py-3"
+                                            >
+                                                <div className="w-8 h-8 rounded-full bg-steel-blue flex items-center justify-center flex-shrink-0">
+                                                    <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                                    </svg>
+                                                </div>
+                                                <span className="text-sm font-medium text-navy-dark">{specialty}</span>
+                                            </div>
+                                        ))}
                                     </div>
                                 </div>
                             </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
-
-            {/* Why Choose Our Team */}
-            <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
-                <div className="max-w-7xl mx-auto">
-                    <h2 className="text-3xl font-bold text-navy-dark mb-12 text-center">Why Choose Our Team</h2>
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                        <div className="text-center">
-                            <div className="flex justify-center mb-4">
-                                <div className="w-16 h-16 bg-steel-blue rounded-full flex items-center justify-center">
-                                    <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path>
-                                    </svg>
-                                </div>
-                            </div>
-                            <h3 className="text-xl font-bold text-navy-dark mb-3">Highly Qualified</h3>
-                            <p className="text-gray-600">All team members are registered professionals with advanced certifications and ongoing education.</p>
                         </div>
-                        <div className="text-center">
-                            <div className="flex justify-center mb-4">
-                                <div className="w-16 h-16 bg-steel-blue rounded-full flex items-center justify-center">
-                                    <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path>
-                                    </svg>
-                                </div>
-                            </div>
-                            <h3 className="text-xl font-bold text-navy-dark mb-3">Collaborative Care</h3>
-                            <p className="text-gray-600">Our team works together to provide comprehensive, integrated treatment plans.</p>
-                        </div>
-                        <div className="text-center">
-                            <div className="flex justify-center mb-4">
-                                <div className="w-16 h-16 bg-steel-blue rounded-full flex items-center justify-center">
-                                    <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
-                                    </svg>
-                                </div>
-                            </div>
-                            <h3 className="text-xl font-bold text-navy-dark mb-3">Patient-Centered</h3>
-                            <p className="text-gray-600">We prioritize your comfort, goals, and individual needs in every treatment session.</p>
-                        </div>
-                    </div>
+                    ))}
                 </div>
             </section>
 
@@ -167,10 +128,10 @@ export default function Team() {
                     <p className="text-xl mb-10 text-gray-100">
                         Book an appointment today and experience personalized care from our expert professionals.
                     </p>
-                    <Button 
-                        href="/contact" 
-                        variant="primary" 
-                        className="text-lg px-10 py-4" 
+                    <Button
+                        href="/contact"
+                        variant="primary"
+                        className="text-lg px-10 py-4"
                         style={{ backgroundColor: '#14B8A6', color: 'white' }}
                     >
                         Book Appointment
