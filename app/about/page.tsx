@@ -72,13 +72,13 @@ export default function About() {
                     </div>
                 </div>
             </section>
-            
+
             {/* Meet Our Team */}
             <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white-shade">
                 <div className="max-w-4xl mx-auto">
                     <h2 className="text-3xl font-bold text-navy-dark mb-6 text-center">Meet Our Team</h2>
                     <p className="text-lg text-gray-600 text-center mb-8">
-                        Our team consists of registered physiotherapists, massage therapists, chiropractors, and acupuncturists who are passionate about what they do. We stay up-to-date with the latest research and techniques to provide you with the best possible care.
+                        Our team consists of registered physiotherapists, and registered massage therapists who are passionate about what they do. We stay up-to-date with the latest research and techniques to provide you with the best possible care.
                     </p>
                 </div>
             </section>

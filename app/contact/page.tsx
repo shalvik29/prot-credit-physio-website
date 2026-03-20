@@ -33,9 +33,9 @@ export default function Contact() {
                                 </div>
                                 <div>
                                     <h3 className="font-semibold text-navy-dark">Hours</h3>
-                                    <p>Monday - Friday: 10:00 AM - 7:00 PM</p>
-                                    <p>Saturday: 10:00 AM - 3:00 PM</p>
-                                    <p>Sunday: Closed</p>
+                                    <p>Monday - Thursday: 10:00 AM - 7:00 PM</p>
+                                    <p>Friday - Saturday: 10:00 AM - 4:00 PM</p>
+                                    <p>Sunday: 10:00 AM - 2:00 PM</p>
                                 </div>
                             </div>
                         </div>

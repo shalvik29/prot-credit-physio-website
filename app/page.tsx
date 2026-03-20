@@ -38,7 +38,7 @@ export default function Home() {
     <div className="flex flex-col min-h-screen">
       {/* Hero Section with Background Image */}
       <section className="relative h-screen flex flex-col justify-end">
-        <Image 
+        <Image
           src="https://images.unsplash.com/photo-1434682881908-b43d0467b798?w=1920&h=1080&fit=crop&q=80"
           alt="Person doing physiotherapy exercise"
           fill
@@ -65,8 +65,8 @@ export default function Home() {
             {/* Button and Tagline */}
             <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-8 md:gap-12">
               {/* Button on Left */}
-              <Link 
-                href="/contact" 
+              <Link
+                href="/contact"
                 className="inline-flex items-center justify-center px-10 py-5 text-lg font-bold rounded-md shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300 border-2 border-white"
                 style={{ backgroundColor: '#FFFFFF', color: '#1a365d' }}
               >
@@ -92,7 +92,7 @@ export default function Home() {
           <h2 className="text-4xl md:text-5xl font-bold text-navy-dark mb-8">
             Leading Physiotherapy Clinic in Port Credit & Mississauga
           </h2>
-          
+
           <div className="max-w-4xl mx-auto space-y-6 text-gray-600 text-lg">
             <p className="font-semibold text-gray-700">
               Are you experiencing ongoing pain or limited mobility, or recovering from an injury or surgery?
@@ -125,7 +125,7 @@ export default function Home() {
               <p className="text-lg text-gray-600 mb-8 leading-relaxed">
                 Port Credit Physio & Rehab provides personalized care for individuals seeking effective treatment, rehabilitation, and long-term pain relief. Our clinic helps patients recover from injury, manage chronic conditions, and return to daily activities with strength and confidence through customized rehabilitation programs tailored to each patient&apos;s goals and lifestyle.
               </p>
-              
+
               {/* Conditions List */}
               <div className="grid grid-cols-1 gap-3 mb-8">
                 {conditions.map((condition, index) => (
@@ -136,9 +136,9 @@ export default function Home() {
                 ))}
               </div>
 
-              <Button 
-                href="/about" 
-                variant="secondary" 
+              <Button
+                href="/about"
+                variant="secondary"
                 style={{ backgroundColor: '#14B8A6', color: 'white' }}
               >
                 About Us
@@ -147,7 +147,7 @@ export default function Home() {
 
             {/* Right Image */}
             <div className="relative h-[500px] rounded-lg overflow-hidden">
-              <Image 
+              <Image
                 src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&h=1000&fit=crop&q=80"
                 alt="Rehabilitation exercise"
                 fill
@@ -179,13 +179,13 @@ export default function Home() {
           {/* Services Grid */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
             {services.map((service, index) => (
-              <Link 
+              <Link
                 key={index}
                 href={`/services/${service.id}`}
                 className="group bg-white rounded-lg overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
               >
                 <div className="relative h-64">
-                  <Image 
+                  <Image
                     src={service.image}
                     alt={service.title}
                     fill
@@ -206,9 +206,9 @@ export default function Home() {
           </div>
 
           <div className="text-center">
-            <Button 
-              href="/services" 
-              variant="secondary" 
+            <Button
+              href="/services"
+              variant="secondary"
               style={{ backgroundColor: '#14B8A6', color: 'white' }}
             >
               Load more
@@ -223,7 +223,7 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Left Image */}
             <div className="relative h-[500px] rounded-lg overflow-hidden order-2 lg:order-1">
-              <Image 
+              <Image
                 src="/happyCustomer.jpeg"
                 alt="Happy customer"
                 fill
@@ -244,9 +244,9 @@ export default function Home() {
                   Port Credit physiotherapist will collaborate with you to develop a tailored treatment plan focused on resolving your concerns and helping you safely return to your daily activities as quickly as possible.
                 </p>
               </div>
-              <Button 
-                href="/contact" 
-                variant="secondary" 
+              <Button
+                href="/contact"
+                variant="secondary"
                 style={{ backgroundColor: '#14B8A6', color: 'white' }}
               >
                 Contact Us
@@ -311,7 +311,7 @@ export default function Home() {
               <div className="text-4xl flex-shrink-0">🏢</div>
               <div>
                 <h3 className="text-xl font-bold text-navy-dark mb-2">Multidisciplinary Excellence</h3>
-                <p className="text-gray-600 leading-relaxed">Access a range of services under one roof at our 268 Lakeshore Road E location. Benefit from Physiotherapy, Chiropractic, and Acupuncture to support your comprehensive recovery.</p>
+                <p className="text-gray-600 leading-relaxed">Access a range of services under one roof at our 268 Lakeshore Road E location. Benefit from Physiotherapy, and Massage Therapy to support your comprehensive recovery.</p>
               </div>
             </div>
 
@@ -326,10 +326,10 @@ export default function Home() {
           <p className="text-xl mb-10 text-gray-100">
             Contact us today and take the first step towards better health.
           </p>
-          <Button 
-            href="/contact" 
-            variant="primary" 
-            className="!font-bold text-lg px-10 py-4 shadow-lg" 
+          <Button
+            href="/contact"
+            variant="primary"
+            className="!font-bold text-lg px-10 py-4 shadow-lg"
             style={{ backgroundColor: '#14B8A6', color: 'white' }}
           >
             Contact Us
