@@ -15,20 +15,20 @@ export default function Contact() {
                             <div className="space-y-6 text-gray-600">
                                 <div>
                                     <h3 className="font-semibold text-navy-dark">Address</h3>
-                                    <p>301 - 268 Lakeshore Rd East</p>
+                                    <p>Suite 300 - 268 Lakeshore Rd East</p>
                                     <p>Mississauga, ON L5G 1H1</p>
                                 </div>
                                 <div>
                                     <h3 className="font-semibold text-navy-dark">Phone</h3>
-                                    <p>Coming Soon</p>
+                                    <a href="tel:+12894978334" className="text-steel-blue hover:underline">(289) 497-8334</a>
                                 </div>
                                 <div>
                                     <h3 className="font-semibold text-navy-dark">Fax</h3>
-                                    <p>Coming Soon</p>
+                                    <p>(289) 536-3004</p>
                                 </div>
                                 <div>
                                     <h3 className="font-semibold text-navy-dark">Email</h3>
-                                    <p>info@portcreditphysio.com</p>
+                                    <a href="mailto:info@portcreditphysio.com" className="text-steel-blue hover:underline">info@portcreditphysio.com</a>
                                 </div>
                                 <div>
                                     <h3 className="font-semibold text-navy-dark">Hours</h3>

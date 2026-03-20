@@ -69,8 +69,8 @@ Move from pain to performance through active partnership and clinical excellence
     title: 'Vestibular Rehabilitation',
     subtitle: 'Stop the Spinning, Find Your Balance',
     description: 'Stop the Spinning, Find Your Balance',
-    image: 'https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=800&h=600&fit=crop&q=80',
-    heroImage: 'https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=1920&h=1080&fit=crop&q=80',
+    image: '/vestibular.jpg',
+    heroImage: '/vestibular.jpg',
     fullDescription: `If the world feels like it's spinning, your independence is at risk. Vestibular rehabilitation is a specialized, exercise-based program designed to retrain your brain and inner ear to work in harmony.
 
 Stop the spinning, restore confidence, and get you back to living without fear of falling or dizziness.`,
@@ -98,8 +98,8 @@ Stop the spinning, restore confidence, and get you back to living without fear o
     title: 'Sports Injury Rehabilitation',
     subtitle: 'Return Stronger, Not Just Pain-Free',
     description: 'Return Stronger, Not Just Pain-Free',
-    image: '/SportsInjury.jpg',
-    heroImage: '/SportsInjury.jpg',
+    image: '/SportsInjury.jpeg',
+    heroImage: '/SportsInjury.jpeg',
     fullDescription: `Whether you're a weekend warrior on the Waterfront Trail or a competitive athlete, sports injuries demand specialized care. We don't just get you back on the field—we get you back stronger.
 
 Advanced biomechanical analysis, Kinesio Taping, and injury prevention strategies used by professional athletes. We focus on functional return-to-sport protocols.`,
@@ -117,8 +117,8 @@ Advanced biomechanical analysis, Kinesio Taping, and injury prevention strategie
     title: 'Post-Operative Rehabilitation',
     subtitle: 'Surgery is Step One. Rehab is Where You Thrive.',
     description: 'Surgery is Step One. Rehab is Where You Thrive.',
-    image: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=800&h=600&fit=crop&q=80',
-    heroImage: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=1920&h=1080&fit=crop&q=80',
+    image: '/PostOperativeRehab.jpg',
+    heroImage: '/PostOperativeRehab.jpg',
     fullDescription: `The surgery repaired the structure. Physiotherapy restores the function—and your life.
 
 Whether you've had a Total Knee Replacement, Hip Arthroplasty, or Rotator Cuff Repair, our specialized post-op protocols focus on three critical pillars:
@@ -143,8 +143,8 @@ Our Clinical Commitment: Your new joint performs even better than the old one. W
     title: 'Shockwave Therapy',
     subtitle: 'Break Through Chronic Pain',
     description: 'Break Through Chronic Pain',
-    image: 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=800&h=600&fit=crop&q=80',
-    heroImage: 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=1920&h=1080&fit=crop&q=80',
+    image: '/shockwave.jpeg',
+    heroImage: '/shockwave.jpeg',
     fullDescription: `Shockwave Therapy (ESWT) is a non-invasive treatment that uses acoustic waves to jumpstart healing in chronic injuries that have 'stalled.' Despite the name, there are no electric shocks—just high-energy sound waves that wake up your body's natural healing response.
 
 How It Works:
@@ -170,8 +170,8 @@ What to Expect: 3-6 sessions, spaced 5-10 days apart. Results improve over 6-12 
     title: 'Massage Therapy (RMT)',
     subtitle: 'Therapeutic Recovery',
     description: 'Therapeutic Touch That Accelerates Recovery',
-    image: 'https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=800&h=600&fit=crop&q=80',
-    heroImage: 'https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=1920&h=1080&fit=crop&q=80',
+    image: '/massage.jpeg',
+    heroImage: '/massage.jpeg',
     fullDescription: `Beyond relaxation, our Registered Massage Therapists (RMTs) use evidence-based soft tissue manipulation to reduce muscle tension, improve circulation, and speed recovery from sports injuries or chronic stress.
 
 Massage therapy works beautifully alongside physiotherapy, helping to:
@@ -197,8 +197,8 @@ Perfect for: Post-workout recovery, chronic pain management, injury rehabilitati
     title: 'Workplace Injury Rehabilitation (WSIB)',
     subtitle: 'Recover at Work. Return with Confidence.',
     description: 'Recover at Work. Return with Confidence.',
-    image: 'https://images.unsplash.com/photo-1530026405186-ed1f139313f8?w=800&h=600&fit=crop&q=80',
-    heroImage: 'https://images.unsplash.com/photo-1530026405186-ed1f139313f8?w=1920&h=1080&fit=crop&q=80',
+    image: '/workplaceInjury.jpeg',
+    heroImage: '/workplaceInjury.jpeg',
     fullDescription: `What is WSIB?
 The Workplace Safety and Insurance Board (WSIB) is a provincial agency in Ontario that provides support and insurance for workers who have been injured on the job or have developed an occupational illness.
 

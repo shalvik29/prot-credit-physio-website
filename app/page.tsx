@@ -25,12 +25,12 @@ export default function Home() {
     {
       id: 'vestibular-rehabilitation',
       title: 'Vestibular Rehabilitation',
-      image: 'https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=800&h=600&fit=crop&q=80'
+      image: '/vestibular.jpg'
     },
     {
       id: 'sports-injury-rehabilitation',
       title: 'Sports Injury Rehabilitation',
-      image: '/SportsInjury.jpg'
+      image: '/SportsInjury.jpeg'
     }
   ]
 
@@ -224,8 +224,8 @@ export default function Home() {
             {/* Left Image */}
             <div className="relative h-[500px] rounded-lg overflow-hidden order-2 lg:order-1">
               <Image 
-                src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=800&h=1000&fit=crop&q=80"
-                alt="Hands during therapy"
+                src="/happyCustomer.jpeg"
+                alt="Happy customer"
                 fill
                 className="object-cover"
               />
