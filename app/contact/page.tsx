@@ -10,6 +10,7 @@ export default function Contact() {
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
                     {/* Contact Info & Map */}
                     <div className="space-y-8">
+                        {/* Contact info */}
                         <div>
                             <h2 className="text-2xl font-bold text-navy-medium mb-6">Get in Touch</h2>
                             <div className="space-y-6 text-gray-600">
