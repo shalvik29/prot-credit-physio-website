@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import Button from './ui/Button';
+
 import { usePathname } from 'next/navigation';
 import { servicesData } from '@/lib/servicesData';
 
@@ -169,9 +169,9 @@ export default function Navbar() {
                                 )}
                             </div>
                         ))}
-                        <Button href="/contact" variant="primary" style={{ backgroundColor: '#14B8A6', color: 'white' }}>
-                            Book Appointment
-                        </Button>
+                        <div className="flex items-center">
+                            <iframe frameBorder="0" height="28" scrolling="no" src="https://portcreditphysioandrehab.janeapp.com/embed/book_online" width="177"></iframe>
+                        </div>
                     </div>
 
                     <div className="flex items-center md:hidden">
@@ -227,10 +227,8 @@ export default function Navbar() {
                                 )}
                             </div>
                         ))}
-                        <div className="pt-4 pb-2">
-                            <Button href="/contact" variant="primary" className="w-full" style={{ backgroundColor: '#14B8A6', color: 'white' }}>
-                                Book Appointment
-                            </Button>
+                        <div className="pt-4 pb-2 flex justify-center">
+                            <iframe frameBorder="0" height="28" scrolling="no" src="https://portcreditphysioandrehab.janeapp.com/embed/book_online" width="177"></iframe>
                         </div>
                     </div>
                 </div>
