@@ -105,7 +105,7 @@ export default function Navbar() {
                     <div className="flex items-center">
                         <Link href="/" className="flex-shrink-0 flex items-center py-2">
                             <Image
-                                src="/logo.svg"
+                                src="/logo.jpeg"
                                 alt="Port Credit Physio Logo"
                                 width={350}
                                 height={160}
