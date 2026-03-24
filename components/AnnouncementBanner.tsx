@@ -19,9 +19,9 @@ export default function AnnouncementBanner() {
     if (!isVisible) return null;
 
     return (
-        <div 
+        <div
             data-announcement-banner
-            className="fixed top-0 left-0 right-0 z-[60] bg-[#2DD4BF] text-black py-3 px-4 shadow-md" 
+            className="fixed top-0 left-0 right-0 z-[60] bg-[#2DD4BF] text-black py-3 px-4 shadow-md"
             style={{ backgroundColor: '#2DD4BF' }}
         >
             <div className="max-w-7xl mx-auto flex items-center justify-between gap-3">
@@ -32,7 +32,7 @@ export default function AnnouncementBanner() {
                 </div>
                 <div className="flex items-center gap-3">
                     <div className={`flex items-center transition-all duration-300 hover:scale-105 ${isShaking ? 'animate-shake' : ''}`}>
-                        <iframe frameBorder="0" height="28" scrolling="no" src="https://portcreditphysioandrehab.janeapp.com/embed/book_online" width="177"></iframe>
+                        <iframe height="28" src="https://portcreditphysioandrehab.janeapp.com/embed/book_online" width="177"></iframe>
                     </div>
                     <button
                         onClick={() => setIsVisible(false)}

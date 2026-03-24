@@ -65,13 +65,9 @@ export default function Home() {
             {/* Button and Tagline */}
             <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-8 md:gap-12">
               {/* Button on Left */}
-              <Link
-                href="/contact"
-                className="inline-flex items-center justify-center px-10 py-5 text-lg font-bold rounded-md shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300 border-2 border-white"
-                style={{ backgroundColor: '#FFFFFF', color: '#1a365d' }}
-              >
-                Book Your Appointment
-              </Link>
+              <div className="flex items-center">
+                <iframe height="28" src="https://portcreditphysioandrehab.janeapp.com/embed/book_online" width="177"></iframe>
+              </div>
 
               {/* Text on Right */}
               <div className="text-white text-xs md:text-sm text-left md:text-right leading-relaxed pt-5 md:pt-4">

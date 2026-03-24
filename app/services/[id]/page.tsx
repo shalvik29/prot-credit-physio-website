@@ -21,7 +21,7 @@ export default function ServiceDetailPage({ params }: { params: { id: string } }
     <div className="flex flex-col min-h-screen pt-32">
       {/* Hero Section */}
       <section className="relative h-[400px] flex items-center justify-center">
-        <Image 
+        <Image
           src={service.heroImage}
           alt={service.title}
           fill
@@ -74,7 +74,7 @@ export default function ServiceDetailPage({ params }: { params: { id: string } }
             <h2 className="text-3xl font-bold text-navy-dark mb-6">Conditions we treat</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {service.conditions.map((condition, index) => (
-                <div 
+                <div
                   key={index}
                   className="flex items-center gap-3 bg-white p-4 rounded-lg border-l-4 border-steel-blue"
                 >
@@ -134,17 +134,12 @@ export default function ServiceDetailPage({ params }: { params: { id: string } }
             Book your appointment today and take the first step towards recovery.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button 
-              href="/contact" 
-              variant="primary" 
-              className="text-lg px-8 py-4" 
-              style={{ backgroundColor: '#14B8A6', color: 'white' }}
-            >
-              Book Appointment
-            </Button>
-            <Button 
-              href="/services" 
-              variant="outline" 
+            <div className="flex items-center">
+              <iframe height="28" src="https://portcreditphysioandrehab.janeapp.com/embed/book_online" width="177"></iframe>
+            </div>
+            <Button
+              href="/services"
+              variant="outline"
               className="text-lg px-8 py-4 border-white text-white hover:bg-white hover:text-navy-dark"
             >
               View All Services

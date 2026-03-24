@@ -1,5 +1,3 @@
-import Button from '@/components/ui/Button'
-
 export default function Team() {
     const teamMembers = [
         {
@@ -128,14 +126,9 @@ Since launching her private practice in 2021, Simoni has dedicated herself to he
                     <p className="text-xl mb-10 text-gray-100">
                         Book an appointment today and experience personalized care from our expert professionals.
                     </p>
-                    <Button
-                        href="/contact"
-                        variant="primary"
-                        className="text-lg px-10 py-4"
-                        style={{ backgroundColor: '#14B8A6', color: 'white' }}
-                    >
-                        Book Appointment
-                    </Button>
+                    <div className="flex items-center">
+                        <iframe height="28" src="https://portcreditphysioandrehab.janeapp.com/embed/book_online" width="177"></iframe>
+                    </div>
                 </div>
             </section>
         </div>
