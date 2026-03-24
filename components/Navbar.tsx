@@ -109,8 +109,7 @@ export default function Navbar() {
                                 alt="Port Credit Physio Logo"
                                 width={350}
                                 height={160}
-                                className="h-40 w-auto transition-all duration-300"
-                                style={{ maxWidth: '350px', marginTop: '10px' }}
+                                className="h-16 w-auto transition-all duration-300 object-contain"
                                 priority
                             />
                         </Link>
