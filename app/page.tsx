@@ -25,7 +25,7 @@ export default function Home() {
     {
       id: 'vestibular-rehabilitation',
       title: 'Vestibular Rehabilitation',
-      image: '/vestibular.jpg'
+      image: '/vestibular.jpeg'
     },
     {
       id: 'sports-injury-rehabilitation',
