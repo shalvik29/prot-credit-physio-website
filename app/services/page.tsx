@@ -5,10 +5,10 @@ import { servicesData } from '@/lib/servicesData'
 
 export default function Services() {
     return (
-        <div className="bg-white-shade min-h-screen pt-32">
+        <div className="bg-white-shade min-h-screen pt-32 md:pt-40">
             {/* Hero Section */}
             <section className="bg-navy-dark text-white py-16 px-4 sm:px-6 lg:px-8">
-                <div className="max-w-4xl mx-auto text-center">
+                <div className="max-w-6xl mx-auto text-center">
                     <p className="text-sm uppercase tracking-wider mb-4">Helping You Move Better, Faster</p>
                     <h1 className="text-4xl md:text-5xl font-bold mb-6">Our Services</h1>
                     <p className="text-lg text-gray-300 mb-4">
@@ -25,13 +25,13 @@ export default function Services() {
                 <div className="max-w-7xl mx-auto">
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {servicesData.map((service, index) => (
-                            <Link 
+                            <Link
                                 key={index}
                                 href={`/services/${service.id}`}
                                 className="group bg-white rounded-lg overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
                             >
                                 <div className="relative h-64">
-                                    <Image 
+                                    <Image
                                         src={service.image}
                                         alt={service.title}
                                         fill
@@ -55,7 +55,7 @@ export default function Services() {
 
             {/* CTA Section */}
             <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
-                <div className="max-w-4xl mx-auto text-center p-8 rounded-lg shadow-sm bg-white-shade">
+                <div className="max-w-6xl mx-auto text-center p-8 rounded-lg shadow-sm bg-white-shade">
                     <h2 className="text-2xl font-bold text-navy-dark mb-4">Unsure which service is right for you?</h2>
                     <p className="text-gray-600 mb-8">
                         Contact us for a consultation and we&apos;ll help you determine the best treatment plan for your needs.

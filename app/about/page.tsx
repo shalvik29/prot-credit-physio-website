@@ -3,10 +3,10 @@ import Image from 'next/image'
 
 export default function About() {
     return (
-        <div className="bg-white-shade min-h-screen pt-32">
+        <div className="bg-white-shade min-h-screen pt-32 md:pt-40">
             {/* Hero Section */}
             <section className="bg-navy-dark text-white py-16 px-4 sm:px-6 lg:px-8">
-                <div className="max-w-4xl mx-auto text-center">
+                <div className="max-w-6xl mx-auto text-center">
                     <h1 className="text-4xl md:text-5xl font-bold mb-4">About Port Credit Physio & Rehab</h1>
                     <p className="text-xl text-gray-300">
                         Your trusted partner in health and recovery
@@ -16,7 +16,7 @@ export default function About() {
 
             {/* Vision Section */}
             <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
-                <div className="max-w-4xl mx-auto text-center">
+                <div className="max-w-6xl mx-auto text-center">
                     <h2 className="text-3xl font-bold text-navy-dark mb-6">Our Vision</h2>
                     <p className="text-lg text-gray-700 leading-relaxed">
                         To be the heartbeat of health in Port Credit, where personalized care meets active recovery. We envision a community where every neighbor has the strength to move freely, the knowledge to stay pain-free, and the independence to enjoy life by the lake.
@@ -26,7 +26,7 @@ export default function About() {
 
             {/* Mission Section */}
             <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white-shade">
-                <div className="max-w-4xl mx-auto text-center">
+                <div className="max-w-6xl mx-auto text-center">
                     <h2 className="text-3xl font-bold text-navy-dark mb-6">Our Mission</h2>
                     <p className="text-lg text-gray-700 leading-relaxed">
                         To provide an all-encompassing rehab sanctuary in the heart of the Village. Through expert education, advanced manual therapy, and a partnership-based approach, we empower our patients to conquer pain, restore balance, and reclaim their physical freedom.
@@ -75,7 +75,7 @@ export default function About() {
 
             {/* Meet Our Team */}
             <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white-shade">
-                <div className="max-w-4xl mx-auto">
+                <div className="max-w-6xl mx-auto">
                     <h2 className="text-3xl font-bold text-navy-dark mb-6 text-center">Meet Our Team</h2>
                     <p className="text-lg text-gray-600 text-center mb-8">
                         Our team consists of registered physiotherapists, and registered massage therapists who are passionate about what they do. We stay up-to-date with the latest research and techniques to provide you with the best possible care.

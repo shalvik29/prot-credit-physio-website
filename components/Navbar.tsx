@@ -6,6 +6,7 @@ import Image from 'next/image';
 
 import { usePathname } from 'next/navigation';
 import { servicesData } from '@/lib/servicesData';
+import Button from './ui/Button';
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
@@ -101,15 +102,15 @@ export default function Navbar() {
     return (
         <nav className={navbarClasses} style={{ top: `${bannerHeight}px` }}>
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="flex justify-between h-20">
+                <div className="flex justify-between h-20 md:h-24">
                     <div className="flex items-center">
                         <Link href="/" className="flex-shrink-0 flex items-center py-2">
                             <Image
-                                src="/logo.jpeg"
+                                src="/logo.png"
                                 alt="Port Credit Physio Logo"
                                 width={350}
                                 height={160}
-                                className="h-16 w-auto transition-all duration-300 object-contain"
+                                className="h-16 md:h-20 w-auto transition-all duration-300 object-contain"
                                 priority
                             />
                         </Link>
@@ -168,9 +169,9 @@ export default function Navbar() {
                                 )}
                             </div>
                         ))}
-                        <div className="flex items-center">
-                            <iframe frameBorder="0" height="28" scrolling="no" src="https://portcreditphysioandrehab.janeapp.com/embed/book_online" width="177"></iframe>
-                        </div>
+                        <Button href="https://portcreditphysioandrehab.janeapp.com" variant="primary" target="_blank" style={{ backgroundColor: '#14B8A6', color: 'white' }}>
+                            Book Appointment
+                        </Button>
                     </div>
 
                     <div className="flex items-center md:hidden">

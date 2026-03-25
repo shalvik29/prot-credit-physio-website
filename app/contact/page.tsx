@@ -3,7 +3,7 @@ import ContactForm from '@/components/ContactForm'
 
 export default function Contact() {
     return (
-        <div className="bg-white-shade min-h-screen pt-32 py-12 px-4 sm:px-6 lg:px-8">
+        <div className="bg-white-shade min-h-screen pt-32 md:pt-44 py-12 px-4 sm:px-6 lg:px-8">
             <div className="max-w-7xl mx-auto">
                 <h1 className="text-4xl font-bold text-navy-dark mb-8 text-center">Contact Us</h1>
 
@@ -29,7 +29,7 @@ export default function Contact() {
                                 </div>
                                 <div>
                                     <h3 className="font-semibold text-navy-dark">Email</h3>
-                                    <a href="mailto:info@portcreditphysio.com" className="text-steel-blue hover:underline">info@portcreditphysio.com</a>
+                                    <a href="mailto:info@portcreditphysio.ca" className="text-steel-blue hover:underline">info@portcreditphysio.ca</a>
                                 </div>
                                 <div>
                                     <h3 className="font-semibold text-navy-dark">Hours</h3>

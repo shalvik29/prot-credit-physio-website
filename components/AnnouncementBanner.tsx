@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import { useState, useEffect } from 'react';
 
 
@@ -31,9 +32,13 @@ export default function AnnouncementBanner() {
                     </span>
                 </div>
                 <div className="flex items-center gap-3">
-                    <div className={`flex items-center transition-all duration-300 hover:scale-105 ${isShaking ? 'animate-shake' : ''}`}>
-                        <iframe height="28" src="https://portcreditphysioandrehab.janeapp.com/embed/book_online" width="177"></iframe>
-                    </div>
+                    <Link
+                        href="https://portcreditphysioandrehab.janeapp.com"
+                        target="_blank"
+                        className={`bg-black text-white px-5 py-2 rounded-md font-bold hover:bg-gray-800 transition-all duration-300 shadow-lg hover:shadow-xl whitespace-nowrap text-sm md:text-base ${isShaking ? 'animate-shake' : ''}`}
+                    >
+                        Book Now
+                    </Link>
                     <button
                         onClick={() => setIsVisible(false)}
                         className="text-black hover:text-gray-700 transition-colors flex-shrink-0 p-1"

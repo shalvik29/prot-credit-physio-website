@@ -1,3 +1,5 @@
+import Button from "@/components/ui/Button"
+
 export default function Team() {
     const teamMembers = [
         {
@@ -30,10 +32,10 @@ Since launching her private practice in 2021, Simoni has dedicated herself to he
     ]
 
     return (
-        <div className="bg-white-shade min-h-screen pt-32">
+        <div className="bg-white-shade min-h-screen pt-32 md:pt-44">
             {/* Hero Section */}
             <section className="bg-navy-dark text-white py-16 px-4 sm:px-6 lg:px-8">
-                <div className="max-w-4xl mx-auto text-center">
+                <div className="max-w-6xl mx-auto text-center">
                     <h1 className="text-4xl md:text-5xl font-bold mb-4">Meet Our Team</h1>
                     <p className="text-xl text-gray-300">
                         Experienced professionals dedicated to your health and wellness
@@ -43,7 +45,7 @@ Since launching her private practice in 2021, Simoni has dedicated herself to he
 
             {/* Team Members */}
             <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white-shade">
-                <div className="max-w-5xl mx-auto flex flex-col gap-12">
+                <div className="max-w-6xl mx-auto flex flex-col gap-12">
                     {teamMembers.map((member, index) => (
                         <div key={index} className="bg-white rounded-xl shadow-md overflow-hidden">
                             {/* Header */}
@@ -121,14 +123,20 @@ Since launching her private practice in 2021, Simoni has dedicated herself to he
 
             {/* CTA Section */}
             <section className="py-16 px-4 sm:px-6 lg:px-8 bg-steel-blue text-white text-center">
-                <div className="max-w-4xl mx-auto">
+                <div className="max-w-6xl mx-auto">
                     <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Meet Our Team?</h2>
                     <p className="text-xl mb-10 text-gray-100">
                         Book an appointment today and experience personalized care from our expert professionals.
                     </p>
-                    <div className="flex items-center">
-                        <iframe height="28" src="https://portcreditphysioandrehab.janeapp.com/embed/book_online" width="177"></iframe>
-                    </div>
+                    <Button
+                        href="https://portcreditphysioandrehab.janeapp.com"
+                        variant="primary"
+                        target="_blank"
+                        className="text-lg px-10 py-4"
+                        style={{ backgroundColor: '#14B8A6', color: 'white' }}
+                    >
+                        Book Appointment
+                    </Button>
                 </div>
             </section>
         </div>

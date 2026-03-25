@@ -18,9 +18,9 @@ export default function ServiceDetailPage({ params }: { params: { id: string } }
   }
 
   return (
-    <div className="flex flex-col min-h-screen pt-32">
+    <div className="flex flex-col min-h-screen pt-32 md:pt-44">
       {/* Hero Section */}
-      <section className="relative h-[400px] flex items-center justify-center">
+      <section className="relative h-[400px] md:h-[500px] flex items-center justify-center">
         <Image
           src={service.heroImage}
           alt={service.title}
@@ -37,7 +37,7 @@ export default function ServiceDetailPage({ params }: { params: { id: string } }
 
       {/* Content Section */}
       <section className="py-10 px-4 sm:px-6 lg:px-8 bg-white">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-6xl mx-auto">
           <div className="prose prose-lg max-w-none">
             <p className="text-lg text-gray-700 leading-relaxed whitespace-pre-line">
               {service.fullDescription}
@@ -49,7 +49,7 @@ export default function ServiceDetailPage({ params }: { params: { id: string } }
       {/* Techniques Section */}
       {service.techniques && (
         <section className="py-10 px-4 sm:px-6 lg:px-8 bg-white-shade">
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl font-bold text-navy-dark mb-3">{service.techniques.sectionTitle}</h2>
             <p className="text-lg text-gray-600 mb-6">{service.techniques.intro}</p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -70,7 +70,7 @@ export default function ServiceDetailPage({ params }: { params: { id: string } }
       {/* Conditions Treated */}
       {service.conditions && service.conditions.length > 0 && (
         <section className="py-10 px-4 sm:px-6 lg:px-8 bg-white-shade">
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl font-bold text-navy-dark mb-6">Conditions we treat</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {service.conditions.map((condition, index) => (
@@ -90,7 +90,7 @@ export default function ServiceDetailPage({ params }: { params: { id: string } }
       {/* Process Steps */}
       {service.process && (
         <section className="py-10 px-4 sm:px-6 lg:px-8 bg-white-shade">
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl font-bold text-navy-dark mb-8">{service.process.sectionTitle}</h2>
             {service.process.intro && (
               <p className="text-lg text-gray-600 mb-6">{service.process.intro}</p>
@@ -134,9 +134,15 @@ export default function ServiceDetailPage({ params }: { params: { id: string } }
             Book your appointment today and take the first step towards recovery.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <div className="flex items-center">
-              <iframe height="28" src="https://portcreditphysioandrehab.janeapp.com/embed/book_online" width="177"></iframe>
-            </div>
+            <Button
+              href="https://portcreditphysioandrehab.janeapp.com"
+              variant="primary"
+              target="_blank"
+              className="text-lg px-8 py-4"
+              style={{ backgroundColor: '#14B8A6', color: 'white' }}
+            >
+              Book Appointment
+            </Button>
             <Button
               href="/services"
               variant="outline"

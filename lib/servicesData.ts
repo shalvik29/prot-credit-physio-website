@@ -69,8 +69,8 @@ Move from pain to performance through active partnership and clinical excellence
     title: 'Vestibular Rehabilitation',
     subtitle: 'Stop the Spinning, Find Your Balance',
     description: 'Stop the Spinning, Find Your Balance',
-    image: '/vestibular.jpg',
-    heroImage: '/vestibular.jpg',
+    image: '/vestibular.jpeg',
+    heroImage: '/vestibular.jpeg',
     fullDescription: `If the world feels like it's spinning, your independence is at risk. Vestibular rehabilitation is a specialized, exercise-based program designed to retrain your brain and inner ear to work in harmony.
 
 Stop the spinning, restore confidence, and get you back to living without fear of falling or dizziness.`,

@@ -9,6 +9,8 @@ interface ButtonProps {
     className?: string;
     type?: 'button' | 'submit' | 'reset';
     style?: React.CSSProperties;
+    target?: string;
+    rel?: string;
 }
 
 export default function Button({
@@ -19,6 +21,8 @@ export default function Button({
     className = '',
     type = 'button',
     style,
+    target,
+    rel,
 }: ButtonProps) {
     const baseStyles =
         'inline-flex items-center justify-center px-6 py-3 border text-base font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 transition-colors duration-200';
@@ -33,7 +37,7 @@ export default function Button({
 
     if (href) {
         return (
-            <Link href={href} className={styles} style={style}>
+            <Link href={href} className={styles} style={style} target={target} rel={rel}>
                 {children}
             </Link>
         );
