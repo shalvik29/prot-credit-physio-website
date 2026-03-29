@@ -18,7 +18,7 @@ export default function ServiceDetailPage({ params }: { params: { id: string } }
   }
 
   return (
-    <div className="flex flex-col min-h-screen pt-32 md:pt-40">
+    <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
       <section className="relative h-[400px] md:h-[500px] flex items-center justify-center">
         <Image

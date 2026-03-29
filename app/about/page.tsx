@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 export default function About() {
     return (
-        <div className="bg-white-shade min-h-screen pt-32 md:pt-40">
+        <div className="bg-white-shade min-h-screen">
             {/* Hero Section */}
             <section className="bg-navy-dark text-white py-16 px-4 sm:px-6 lg:px-8">
                 <div className="max-w-6xl mx-auto text-center">

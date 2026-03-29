@@ -100,8 +100,9 @@ export default function Navbar() {
     const mobileTextClasses = 'text-navy-medium hover:text-navy-dark hover:bg-gray-50';
 
     return (
-        <nav className={navbarClasses} style={{ top: `${bannerHeight}px` }}>
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <>
+            <nav className={navbarClasses} style={{ top: `${bannerHeight}px` }}>
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between h-20 md:h-24">
                     <div className="flex items-center">
                         <Link href="/" className="flex-shrink-0 flex items-center py-2">
@@ -234,5 +235,13 @@ export default function Navbar() {
                 </div>
             )}
         </nav>
+        {/* Dynamic spacer for non-home pages to clear fixed navbar and banner */}
+        {!isHomePage && (
+            <div className="w-full transition-all duration-300 pointer-events-none" aria-hidden="true">
+                <div style={{ height: `${bannerHeight}px` }} className="w-full transition-all duration-300" />
+                <div className="w-full h-20 md:h-24" />
+            </div>
+        )}
+        </>
     );
 }
