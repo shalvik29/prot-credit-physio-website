@@ -1,7 +1,13 @@
 import { NextResponse } from 'next/server';
-import { Resend } from 'resend';
+import nodemailer from 'nodemailer';
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+const transporter = nodemailer.createTransport({
+    service: 'gmail',
+    auth: {
+        user: process.env.EMAIL_USER,
+        pass: process.env.EMAIL_APP_PASSWORD,
+    },
+});
 
 export async function POST(request: Request) {
     try {
@@ -24,10 +30,10 @@ export async function POST(request: Request) {
             preferredDate,
             message
         });
-        // Send email using Resend
-        const { data, error } = await resend.emails.send({
-            from: 'admin@portcreditphysio.ca', // Keep as onboarding for now unless domain is verified
-            to: ['info@portcreditphysio.ca'],
+        // Send email using Nodemailer
+        const info = await transporter.sendMail({
+            from: process.env.EMAIL_USER,
+            to: ["portcreditphysioandrehab@gmail.com"],
             subject: `New Contact Form Submission: ${service}`,
             replyTo: email,
             html: `
@@ -44,15 +50,7 @@ export async function POST(request: Request) {
             `,
         });
 
-        if (error) {
-            console.error('Resend error:', error);
-            return NextResponse.json(
-                { error: 'Failed to send email' },
-                { status: 500 }
-            );
-        }
-
-        console.log('Contact form submission sent:', data);
+        console.log('Contact form submission sent, messageId:', info.messageId);
 
         return NextResponse.json(
             {
