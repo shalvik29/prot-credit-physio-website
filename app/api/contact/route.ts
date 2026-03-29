@@ -33,7 +33,7 @@ export async function POST(request: Request) {
         // Send email using Nodemailer
         const info = await transporter.sendMail({
             from: process.env.EMAIL_USER,
-            to: ["portcreditphysioandrehab@gmail.com"],
+            to: ["info@portcreditphysio.ca"],
             subject: `New Contact Form Submission: ${service}`,
             replyTo: email,
             html: `
