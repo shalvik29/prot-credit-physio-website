@@ -37,7 +37,7 @@ export default function AnnouncementBanner() {
                         target="_blank"
                         className={`bg-black text-white px-5 py-2 rounded-md font-bold hover:bg-gray-800 transition-all duration-300 shadow-lg hover:shadow-xl whitespace-nowrap text-sm md:text-base ${isShaking ? 'animate-shake' : ''}`}
                     >
-                        testing
+                        Book Now
                     </Link>
                     <button
                         onClick={() => setIsVisible(false)}
