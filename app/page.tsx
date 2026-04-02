@@ -281,7 +281,7 @@ export default function Home() {
               <div className="text-4xl flex-shrink-0">📞</div>
               <div>
                 <h3 className="text-xl font-bold text-navy-dark mb-2">Free 15-Minute Recovery Call</h3>
-                <p className="text-gray-600 leading-relaxed">Not sure if physiotherapy is right for you? Book a no-obligation chat to discuss your injury and discover how we can help you regain your independence.</p>
+                <p className="text-gray-600 leading-relaxed">Not sure if physiotherapy is right for you? Book a no-obligation consultation to discuss your injury and discover how we can help you regain your independence.</p>
               </div>
             </div>
 
@@ -312,8 +312,8 @@ export default function Home() {
             <div className="bg-white-shade rounded-xl p-8 flex gap-5">
               <div className="text-4xl flex-shrink-0">🏢</div>
               <div>
-                <h3 className="text-xl font-bold text-navy-dark mb-2">Multidisciplinary Excellence</h3>
-                <p className="text-gray-600 leading-relaxed">Access a range of services under one roof at our 268 Lakeshore Road E location. Benefit from Physiotherapy, and Massage Therapy to support your comprehensive recovery.</p>
+                <h3 className="text-xl font-bold text-navy-dark mb-2">Experienced & Licensed Physiotherapists in Port Credit</h3>
+                <p className="text-gray-600 leading-relaxed">Our team of registered physiotherapists provides evidence-based treatment with a strong focus on quality care and results. Proudly serving patients in Port Credit, Mississauga, Lakeview, Mineola, and surrounding areas, we are committed to helping you recover faster and move better.</p>
               </div>
             </div>
 
