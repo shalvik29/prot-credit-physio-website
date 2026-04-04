@@ -16,7 +16,7 @@ export default function Contact() {
                             <div className="space-y-6 text-gray-600">
                                 <div>
                                     <h3 className="font-semibold text-navy-dark">Address</h3>
-                                    <p>Suite 300 - 268 Lakeshore Rd East</p>
+                                    <p>300 - 268 Lakeshore Rd East</p>
                                     <p>Mississauga, ON L5G 1H1</p>
                                 </div>
                                 <div>
@@ -43,7 +43,7 @@ export default function Contact() {
                         {/* Google Map */}
                         <div className="w-full h-80 rounded-lg overflow-hidden">
                             <GoogleMap
-                                address="268 Lakeshore Rd East, Mississauga, ON L5G 1H1"
+                                address="300-268 Lakeshore Rd East, Mississauga, ON L5G 1H1"
                                 className="h-full"
                             />
                         </div>
