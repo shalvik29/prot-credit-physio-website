@@ -5,6 +5,7 @@ import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import AnnouncementBanner from '@/components/AnnouncementBanner'
 import BackToTop from '@/components/BackToTop'
+import FacebookPixel from '@/components/FacebookPixel'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -21,6 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
+        <FacebookPixel />
         <AnnouncementBanner />
         <Navbar />
         <main>
