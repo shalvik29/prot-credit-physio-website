@@ -8,7 +8,7 @@ import BackToTop from '@/components/BackToTop'
 import FacebookPixel from '@/components/FacebookPixel'
 
 const inter = Inter({ subsets: ['latin'] })
-// It's a common practice to put your ID in .env.local, e.g., NEXT_PUBLIC_FACEBOOK_PIXEL_ID=123456789
+// It's a common practice to put your ID in .env.local, e.g., PASTE_GOOGLE_SEARCH_CONSOLE_CODE_HERE=123456789
 const PASTE_GOOGLE_SEARCH_CONSOLE_CODE_HERE = process.env.PASTE_GOOGLE_SEARCH_CONSOLE_CODE_HERE || ''
 
 export const metadata: Metadata = {
