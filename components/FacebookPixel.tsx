@@ -35,7 +35,7 @@ export default function FacebookPixel() {
 
   if (!FB_PIXEL_ID) {
     if (process.env.NODE_ENV === 'development') {
-        console.warn('Facebook Pixel ID is not set. Add NEXT_PUBLIC_FACEBOOK_PIXEL_ID to your environment variables.')
+      console.warn('Facebook Pixel ID is not set. Add NEXT_PUBLIC_FACEBOOK_PIXEL_ID to your environment variables.')
     }
     return null
   }

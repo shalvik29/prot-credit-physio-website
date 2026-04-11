@@ -8,6 +8,8 @@ import BackToTop from '@/components/BackToTop'
 import FacebookPixel from '@/components/FacebookPixel'
 
 const inter = Inter({ subsets: ['latin'] })
+// It's a common practice to put your ID in .env.local, e.g., NEXT_PUBLIC_FACEBOOK_PIXEL_ID=123456789
+const PASTE_GOOGLE_SEARCH_CONSOLE_CODE_HERE = process.env.PASTE_GOOGLE_SEARCH_CONSOLE_CODE_HERE || ''
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.portcreditphysio.ca'),
@@ -46,7 +48,7 @@ export const metadata: Metadata = {
   twitter: { card: 'summary_large_image' },
   robots: { index: true, follow: true },
   verification: {
-    google: 'PASTE_GOOGLE_SEARCH_CONSOLE_CODE_HERE',
+    google: PASTE_GOOGLE_SEARCH_CONSOLE_CODE_HERE,
   },
 }
 
