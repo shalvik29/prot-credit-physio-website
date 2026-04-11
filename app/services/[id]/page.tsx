@@ -1,7 +1,63 @@
 import { notFound } from 'next/navigation'
 import Image from 'next/image'
+import type { Metadata } from 'next'
 import Button from '@/components/ui/Button'
 import { getServiceById, getAllServiceIds } from '@/lib/servicesData'
+import { BreadcrumbJsonLd } from '@/components/JsonLd'
+
+export async function generateMetadata({ params }: { params: { id: string } }): Promise<Metadata> {
+  const metadataMap: Record<string, { title: string; description: string }> = {
+    'physiotherapy': {
+      title: 'Physiotherapy Port Credit | Physio Mississauga',
+      description: 'Expert physiotherapy in Port Credit, Mississauga. McKenzie Method, Graston Technique & personalized rehab for back pain, sports injuries & sciatica.',
+    },
+    'vestibular-rehabilitation': {
+      title: 'Vestibular Rehab Port Credit | Vertigo Physio',
+      description: 'Vestibular rehabilitation in Port Credit, Mississauga. Treating vertigo, BPPV & balance disorders. Stop the spinning — book at (289) 497-8334.',
+    },
+    'sports-injury-rehabilitation': {
+      title: 'Sports Injury Rehab Mississauga | Port Credit',
+      description: 'Sports injury rehab in Port Credit, Mississauga. ACL rehab, rotator cuff, shin splints & return-to-sport protocols for athletes. Lakeshore Rd East.',
+    },
+    'post-operative-rehabilitation': {
+      title: 'Post-Op Rehab Port Credit | Mississauga Physio',
+      description: 'Post-surgical physiotherapy in Port Credit, Mississauga. Rehab after knee replacement, hip arthroplasty & rotator cuff repair. In-home visits available.',
+    },
+    'shockwave-therapy': {
+      title: 'Shockwave Therapy Port Credit | Physio Clinic',
+      description: 'Shockwave therapy (ESWT) at Port Credit Physio And Rehab, Mississauga. Treats plantar fasciitis, Achilles tendinitis, tennis elbow & chronic pain.',
+    },
+    'massage-therapy': {
+      title: 'Registered Massage Therapy Port Credit | RMT',
+      description: 'Registered Massage Therapy (RMT) in Port Credit, Mississauga. Soft tissue treatment for chronic pain, sports recovery & injury rehab. 268 Lakeshore Rd.',
+    },
+    'workplace-injury-rehabilitation': {
+      title: 'WSIB Physio Port Credit | Workplace Injury Rehab',
+      description: 'Registered WSIB provider in Port Credit, Mississauga. Workplace injury rehabilitation with direct billing — no out-of-pocket costs. Call (289) 497-8334.',
+    },
+  }
+
+  const meta = metadataMap[params.id]
+  if (!meta) {
+    return {
+      title: 'Physiotherapy Services | Port Credit Physio And Rehab',
+      description: 'Explore our full range of physiotherapy and rehab services at Port Credit Physio And Rehab, Mississauga.',
+    }
+  }
+
+  return {
+    title: meta.title,
+    description: meta.description,
+    alternates: {
+      canonical: `https://www.portcreditphysio.ca/services/${params.id}`,
+    },
+    openGraph: {
+      title: meta.title,
+      description: meta.description,
+      url: `https://www.portcreditphysio.ca/services/${params.id}`,
+    },
+  }
+}
 
 export async function generateStaticParams() {
   const ids = getAllServiceIds()
@@ -19,14 +75,20 @@ export default function ServiceDetailPage({ params }: { params: { id: string } }
 
   return (
     <div className="flex flex-col min-h-screen">
+      <BreadcrumbJsonLd items={[
+        { name: 'Home', url: 'https://www.portcreditphysio.ca' },
+        { name: 'Services', url: 'https://www.portcreditphysio.ca/services' },
+        { name: service.title, url: `https://www.portcreditphysio.ca/services/${service.id}` },
+      ]} />
       {/* Hero Section */}
       <section className="relative h-[400px] md:h-[500px] flex items-center justify-center">
         <Image
           src={service.heroImage}
-          alt={service.title}
+          alt={`${service.title} — physiotherapy and rehabilitation Port Credit Mississauga`}
           fill
           className="object-cover"
           priority
+          sizes="100vw"
         />
         <div className="absolute inset-0 bg-black bg-opacity-50"></div>
         <div className="relative z-10 text-center text-white px-4">

@@ -1,6 +1,23 @@
 import Button from '@/components/ui/Button'
 import Image from 'next/image'
 import Link from 'next/link'
+import type { Metadata } from 'next'
+import { FaqJsonLd } from '@/components/JsonLd'
+
+export async function generateMetadata(): Promise<Metadata> {
+  return {
+    title: 'Physiotherapy Port Credit | Port Credit Physio And Rehab',
+    description:
+      'Top-rated physiotherapy and rehab clinic in Port Credit, Mississauga. Sports injuries, back pain, pelvic floor, MVA rehab & more. Call (289) 497-8334.',
+    alternates: { canonical: 'https://www.portcreditphysio.ca' },
+    openGraph: {
+      title: 'Physiotherapy Port Credit | Port Credit Physio And Rehab',
+      description:
+        'Top-rated physiotherapy and rehab clinic in Port Credit, Mississauga. Sports injuries, back pain, pelvic floor, MVA rehab & more. Call (289) 497-8334.',
+      url: 'https://www.portcreditphysio.ca',
+    },
+  }
+}
 
 export default function Home() {
   const conditions = [
@@ -40,10 +57,11 @@ export default function Home() {
       <section className="relative h-screen flex flex-col justify-end">
         <Image
           src="https://images.unsplash.com/photo-1434682881908-b43d0467b798?w=1920&h=1080&fit=crop&q=80"
-          alt="Person doing physiotherapy exercise"
+          alt="Physiotherapy clinic Port Credit Mississauga — Port Credit Physio And Rehab"
           fill
           className="object-cover"
           priority
+          sizes="100vw"
         />
         <div className="absolute inset-0 bg-black bg-opacity-50"></div>
 
@@ -151,9 +169,11 @@ export default function Home() {
             <div className="relative h-[500px] rounded-lg overflow-hidden">
               <Image
                 src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&h=1000&fit=crop&q=80"
-                alt="Rehabilitation exercise"
+                alt="Physiotherapy treatment session Port Credit Mississauga"
                 fill
                 className="object-cover"
+                loading="lazy"
+                sizes="(max-width: 768px) 100vw, 50vw"
               />
             </div>
           </div>
@@ -189,9 +209,11 @@ export default function Home() {
                 <div className="relative h-64">
                   <Image
                     src={service.image}
-                    alt={service.title}
+                    alt={`${service.title} physiotherapy service Port Credit Mississauga`}
                     fill
                     className="object-cover group-hover:scale-110 transition-transform duration-300"
+                    loading="lazy"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   />
                 </div>
                 <div className="p-6 text-center">
@@ -227,9 +249,11 @@ export default function Home() {
             <div className="relative h-[500px] rounded-lg overflow-hidden order-2 lg:order-1">
               <Image
                 src="/happyCustomer.jpeg"
-                alt="Happy customer"
+                alt="Happy patient after physiotherapy treatment Port Credit Physio And Rehab Mississauga"
                 fill
                 className="object-cover"
+                loading="lazy"
+                sizes="(max-width: 768px) 100vw, 50vw"
               />
             </div>
 
@@ -338,6 +362,19 @@ export default function Home() {
           </Button>
         </div>
       </section>
+
+      <FaqJsonLd faqs={[
+        { question: 'What happens during my first visit?', answer: 'Your initial 60-minute appointment includes an in-depth discussion of your medical history and symptoms, followed by a physical exam to evaluate mobility, strength, and function. We provide both assessment and initial treatment during this time.' },
+        { question: 'How long are follow-up appointments?', answer: 'Follow-up sessions are personalized one-on-one with your therapist. We recommend 30 minutes for a single injury area, or 45-60 minutes for multiple areas or complex rehabilitation.' },
+        { question: "What's your cancellation policy?", answer: 'We require 24 hours notice for cancellations or rescheduling. Less than 24 hours notice incurs a $50 fee. Less than 12 hours or no-show results in the full session fee being charged.' },
+        { question: "Do I need a doctor's referral?", answer: 'No. In Ontario, physiotherapists are primary healthcare providers. You can book an assessment and start treatment immediately — no doctor referral needed.' },
+        { question: 'What should I wear?', answer: 'For physiotherapy, wear comfortable loose-fitting clothing. Bring shorts for hip/knee/ankle issues or a tank top for shoulder/neck. For massage therapy, gowns and professional draping are provided.' },
+        { question: 'Is there parking?', answer: 'Free parking is available at Lot 7 (5 Cayuga Ave) or Lot 12 (5 Hiawatha Pkwy), both a 1-3 minute walk. Street parking is also available directly in front — we reimburse street parking at the front desk.' },
+        { question: 'Is treatment covered by insurance?', answer: 'Yes. All services are provided by registered professionals and covered under most extended health plans. We offer direct billing with major providers and handle MVA and WSIB claims directly.' },
+        { question: 'What payment methods do you accept?', answer: 'We accept Debit, Visa, and Mastercard. You will receive an itemized receipt via email immediately after your session.' },
+        { question: 'How do I find the clinic?', answer: 'We are located at Suite 300 - 268 Lakeshore Rd East, Mississauga, ON L5G 1H1 in the heart of Port Credit. At the entrance buzzer, enter 30 and press the ring button.' },
+        { question: 'Do you accept OHIP or ODSP?', answer: 'No. We offer services through private pay or extended health insurance coverage only.' },
+      ]} />
     </div>
   )
 }
