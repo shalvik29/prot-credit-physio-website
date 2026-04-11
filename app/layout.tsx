@@ -6,6 +6,7 @@ import Footer from '@/components/Footer'
 import AnnouncementBanner from '@/components/AnnouncementBanner'
 import BackToTop from '@/components/BackToTop'
 import FacebookPixel from '@/components/FacebookPixel'
+import { LocalBusinessJsonLd } from '@/components/JsonLd'
 
 const inter = Inter({ subsets: ['latin'] })
 // It's a common practice to put your ID in .env.local, e.g., PASTE_GOOGLE_SEARCH_CONSOLE_CODE_HERE=123456789
@@ -67,9 +68,10 @@ export default function RootLayout({
       </head>
       <body className={inter.className}>
         <FacebookPixel />
+        <LocalBusinessJsonLd />
         <AnnouncementBanner />
         <Navbar />
-        <main aria-label="Main content">
+        <main aria-label="Main content — Port Credit Physio And Rehab">
           {children}
         </main>
         <Footer />

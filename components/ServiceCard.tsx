@@ -19,12 +19,14 @@ export default function ServiceCard({
     const CardContent = (
         <div className={`rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 border border-gray-100 overflow-hidden ${className}`} style={{ backgroundColor: '#F4F8F8' }}>
             {imageUrl && (
-                <div className="w-full h-48 overflow-hidden">
+                <div className="relative w-full h-48 overflow-hidden">
                     <Image
                         src={imageUrl}
                         alt={title}
                         fill
                         className="object-cover group-hover:scale-105 transition-transform duration-300"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                        loading="lazy"
                     />
                 </div>
             )}

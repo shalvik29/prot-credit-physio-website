@@ -108,7 +108,7 @@ export default function Navbar() {
                         <Link href="/" className="flex-shrink-0 flex items-center py-2">
                             <Image
                                 src="/logo.png"
-                                alt="Port Credit Physio Logo"
+                                alt="Port Credit Physio And Rehab logo"
                                 width={350}
                                 height={160}
                                 className="h-16 md:h-20 w-auto transition-all duration-300 object-contain"

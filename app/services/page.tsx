@@ -2,6 +2,22 @@ import Link from 'next/link'
 import Image from 'next/image'
 import Button from '@/components/ui/Button'
 import { servicesData } from '@/lib/servicesData'
+import type { Metadata } from 'next'
+
+export async function generateMetadata(): Promise<Metadata> {
+  return {
+    title: 'Physiotherapy & Rehab Services | Port Credit Mississauga',
+    description:
+      'Full range of physiotherapy and rehab services at our Port Credit clinic — sports injury, shockwave therapy, dry needling, pelvic floor, orthotics & more.',
+    alternates: { canonical: 'https://www.portcreditphysio.ca/services' },
+    openGraph: {
+      title: 'Physiotherapy & Rehab Services | Port Credit Mississauga',
+      description:
+        'Full range of physiotherapy and rehab services at our Port Credit clinic — sports injury, shockwave therapy, dry needling, pelvic floor, orthotics & more.',
+      url: 'https://www.portcreditphysio.ca/services',
+    },
+  }
+}
 
 export default function Services() {
     return (
@@ -33,9 +49,11 @@ export default function Services() {
                                 <div className="relative h-64">
                                     <Image
                                         src={service.image}
-                                        alt={service.title}
+                                        alt={`${service.title} physiotherapy service Port Credit Mississauga`}
                                         fill
                                         className="object-cover group-hover:scale-110 transition-transform duration-300"
+                                        loading="lazy"
+                                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                                     />
                                 </div>
                                 <div className="p-6 text-center">
