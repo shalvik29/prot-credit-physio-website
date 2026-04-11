@@ -10,7 +10,7 @@ import { LocalBusinessJsonLd } from '@/components/JsonLd'
 
 const inter = Inter({ subsets: ['latin'] })
 // It's a common practice to put your ID in .env.local, e.g., PASTE_GOOGLE_SEARCH_CONSOLE_CODE_HERE=123456789
-const PASTE_GOOGLE_SEARCH_CONSOLE_CODE_HERE = process.env.PASTE_GOOGLE_SEARCH_CONSOLE_CODE_HERE || ''
+const GOOGLE_SEARCH_CONSOLE_ID = process.env.GOOGLE_SEARCH_CONSOLE_ID || ''
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.portcreditphysio.ca'),
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
   twitter: { card: 'summary_large_image' },
   robots: { index: true, follow: true },
   verification: {
-    google: PASTE_GOOGLE_SEARCH_CONSOLE_CODE_HERE,
+    google: GOOGLE_SEARCH_CONSOLE_ID,
   },
 }
 
