@@ -3,6 +3,14 @@ import { Metadata } from 'next';
 export const metadata: Metadata = {
     title: 'Privacy Policy & Terms of Use | Port Credit Physio',
     description: 'Privacy Policy and Terms of Use for Port Credit Physio and Rehab.',
+    alternates: {
+        canonical: 'https://www.portcreditphysio.ca/privacy-policy',
+    },
+    openGraph: {
+        url: 'https://www.portcreditphysio.ca/privacy-policy',
+        title: 'Privacy Policy & Terms of Use | Port Credit Physio',
+        description: 'Privacy Policy and Terms of Use for Port Credit Physio and Rehab.',
+    },
 };
 
 export default function PrivacyPolicy() {
