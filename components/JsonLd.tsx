@@ -5,7 +5,7 @@ export function LocalBusinessJsonLd() {
     name: 'Port Credit Physio And Rehab',
     url: 'https://www.portcreditphysio.ca',
     telephone: '+12894978334',
-    image: 'https://www.portcreditphysio.ca/og-default.jpg',
+    image: 'https://www.portcreditphysio.ca/og-default.png',
     address: {
       '@type': 'PostalAddress',
       streetAddress: '300 - 268 Lakeshore Rd East',
