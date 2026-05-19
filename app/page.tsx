@@ -15,6 +15,14 @@ export async function generateMetadata(): Promise<Metadata> {
       description:
         'Top-rated physiotherapy and rehab clinic in Port Credit, Mississauga. Sports injuries, back pain, pelvic floor, MVA rehab & more. Call (289) 497-8334.',
       url: 'https://www.portcreditphysio.ca',
+      images: [
+        {
+          url: '/og-default.png',
+          width: 1200,
+          height: 630,
+          alt: 'Port Credit Physio And Rehab — Physiotherapy Mississauga',
+        },
+      ],
     },
   }
 }
