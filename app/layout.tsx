@@ -40,13 +40,13 @@ export const metadata: Metadata = {
     images: [
       {
         url: '/og-default.png',
-        width: 100,
-        height: 100,
+        width: 1200,
+        height: 630,
         alt: 'Port Credit Physio And Rehab — Physiotherapy Mississauga',
       },
     ],
   },
-  twitter: { card: 'summary' },
+  twitter: { card: 'summary_large_image' },
   robots: { index: true, follow: true },
   verification: {
     google: GOOGLE_SEARCH_CONSOLE_ID,
