@@ -40,8 +40,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: '/og-default.png',
-        width: 400,
-        height: 400,
+        width: 100,
+        height: 100,
         alt: 'Port Credit Physio And Rehab — Physiotherapy Mississauga',
       },
     ],
