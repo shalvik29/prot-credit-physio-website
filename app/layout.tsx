@@ -46,7 +46,7 @@ export const metadata: Metadata = {
       },
     ],
   },
-  twitter: { card: 'summary_large_image' },
+  twitter: { card: 'summary' },
   robots: { index: true, follow: true },
   verification: {
     google: GOOGLE_SEARCH_CONSOLE_ID,
