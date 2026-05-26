@@ -1,3 +1,9 @@
+# *
 User-agent: *
 Allow: /
+
+# Host
+Host: https://www.portcreditphysio.ca
+
+# Sitemaps
 Sitemap: https://www.portcreditphysio.ca/sitemap.xml

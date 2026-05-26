@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import { FaqJsonLd } from '@/components/JsonLd'
+import ReviewsSection from '@/components/ReviewsSection'
 
 export async function generateMetadata(): Promise<Metadata> {
   return {
@@ -352,6 +353,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Google Reviews Section */}
+      <ReviewsSection />
 
       {/* CTA Section */}
       <section className="bg-steel-blue py-20 px-4 sm:px-6 lg:px-8 text-center text-white">
