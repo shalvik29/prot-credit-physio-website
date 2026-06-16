@@ -93,9 +93,57 @@ export default function About() {
             <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white-shade">
                 <div className="max-w-6xl mx-auto">
                     <h2 className="text-3xl font-bold text-navy-dark mb-6 text-center">Meet Our Team</h2>
-                    <p className="text-lg text-gray-600 text-center mb-8">
+                    <p className="text-lg text-gray-600 text-center mb-12 max-w-3xl mx-auto">
                         Our team consists of registered physiotherapists, and registered massage therapists who are passionate about what they do. We stay up-to-date with the latest research and techniques to provide you with the best possible care.
                     </p>
+
+                    {/* Team Preview Card */}
+                    <div className="max-w-3xl mx-auto bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 mb-12">
+                        <div className="md:flex">
+                            {/* Left Column / Avatar */}
+                            <div className="md:flex-shrink-0 bg-navy-dark flex items-center justify-center p-8 md:w-48">
+                                <div className="w-24 h-24 rounded-full bg-steel-blue flex items-center justify-center">
+                                    <svg className="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            
+                            {/* Right Column / Content */}
+                            <div className="p-8">
+                                <div className="uppercase tracking-wide text-sm text-steel-blue font-semibold">
+                                    Registered Physiotherapist — PT
+                                </div>
+                                <h3 className="block mt-1 text-2xl leading-tight font-bold text-navy-dark">
+                                    Simoni
+                                </h3>
+                                <p className="mt-1 text-gray-500 italic text-sm">
+                                    &ldquo;The Heart of Your Recovery&rdquo;
+                                </p>
+                                <p className="mt-4 text-gray-600 leading-relaxed text-sm">
+                                    Simoni is dedicated to helping patients reclaim their lives through a blend of skilled manual therapy and active, movement-based rehabilitation. She believes recovery is a partnership—your effort + her expertise = transformation.
+                                </p>
+                                
+                                <div className="mt-6 flex flex-wrap gap-2">
+                                    <span className="px-3 py-1 bg-white-shade text-navy-medium text-xs font-semibold rounded-full border border-steel-blue/20">
+                                        Back Pain & Sciatica
+                                    </span>
+                                    <span className="px-3 py-1 bg-white-shade text-navy-medium text-xs font-semibold rounded-full border border-steel-blue/20">
+                                        Frozen Shoulder
+                                    </span>
+                                    <span className="px-3 py-1 bg-white-shade text-navy-medium text-xs font-semibold rounded-full border border-steel-blue/20">
+                                        Vestibular Rehab
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="text-center">
+                        <Button href="/about/team" variant="secondary" style={{ backgroundColor: '#14B8A6', color: 'white' }}>
+                            Meet Our Team & Read Bios
+                        </Button>
+                    </div>
                 </div>
             </section>
 

@@ -15,6 +15,7 @@ export default function Navbar() {
     const [lastScrollY, setLastScrollY] = useState(0);
     const [bannerHeight, setBannerHeight] = useState(0);
     const [showServicesDropdown, setShowServicesDropdown] = useState(false);
+    const [showAboutDropdown, setShowAboutDropdown] = useState(false);
     const pathname = usePathname();
     const isHomePage = pathname === '/';
 
@@ -59,7 +60,7 @@ export default function Navbar() {
 
     const navLinks = [
         { name: 'Home', href: '/' },
-        { name: 'About', href: '/about' },
+        { name: 'About', href: '/about', hasDropdown: true },
         { name: 'Services', href: '/services', hasDropdown: true },
         { name: 'FAQ', href: '/faq' },
         { name: 'Contact', href: '/contact' },
@@ -122,8 +123,14 @@ export default function Navbar() {
                             <div
                                 key={link.name}
                                 className="relative"
-                                onMouseEnter={() => link.hasDropdown && setShowServicesDropdown(true)}
-                                onMouseLeave={() => link.hasDropdown && setShowServicesDropdown(false)}
+                                onMouseEnter={() => {
+                                    if (link.name === 'About') setShowAboutDropdown(true);
+                                    if (link.name === 'Services') setShowServicesDropdown(true);
+                                }}
+                                onMouseLeave={() => {
+                                    if (link.name === 'About') setShowAboutDropdown(false);
+                                    if (link.name === 'Services') setShowServicesDropdown(false);
+                                }}
                             >
                                 <Link
                                     href={link.href}
@@ -138,8 +145,28 @@ export default function Navbar() {
                                     )}
                                 </Link>
 
+                                {/* About Dropdown */}
+                                {link.name === 'About' && showAboutDropdown && (
+                                    <div className="absolute left-0 top-full mt-2 w-56 bg-white rounded-lg shadow-xl border border-gray-100 py-3 z-50">
+                                        <Link
+                                            href="/about"
+                                            className="block px-4 py-2 hover:bg-gray-50 transition-colors text-sm font-semibold text-navy-dark"
+                                            onClick={() => setShowAboutDropdown(false)}
+                                        >
+                                            About Us
+                                        </Link>
+                                        <Link
+                                            href="/about/team"
+                                            className="block px-4 py-2 hover:bg-gray-50 transition-colors text-sm font-semibold text-navy-dark"
+                                            onClick={() => setShowAboutDropdown(false)}
+                                        >
+                                            Meet Our Team
+                                        </Link>
+                                    </div>
+                                )}
+
                                 {/* Services Dropdown */}
-                                {link.hasDropdown && showServicesDropdown && (
+                                {link.name === 'Services' && showServicesDropdown && (
                                     <div className="absolute left-0 top-full mt-2 w-64 bg-white rounded-lg shadow-xl border border-gray-100 py-4 z-50">
                                         <div className="px-4 pb-2 border-b border-gray-100">
                                             <p className="text-xs uppercase tracking-wider text-gray-500 font-semibold">Our Services</p>
@@ -211,8 +238,28 @@ export default function Navbar() {
                                     {link.name}
                                 </Link>
 
+                                {/* Mobile About Submenu */}
+                                {link.name === 'About' && (
+                                    <div className="ml-4 mt-2 space-y-1">
+                                        <Link
+                                            href="/about"
+                                            className={`block ${mobileTextClasses} px-3 py-2 rounded-md text-sm`}
+                                            onClick={() => setIsOpen(false)}
+                                        >
+                                            About Us
+                                        </Link>
+                                        <Link
+                                            href="/about/team"
+                                            className={`block ${mobileTextClasses} px-3 py-2 rounded-md text-sm`}
+                                            onClick={() => setIsOpen(false)}
+                                        >
+                                            Meet Our Team
+                                        </Link>
+                                    </div>
+                                )}
+
                                 {/* Mobile Services Submenu */}
-                                {link.hasDropdown && (
+                                {link.name === 'Services' && link.hasDropdown && (
                                     <div className="ml-4 mt-2 space-y-1">
                                         {servicesData.map((service) => (
                                             <Link

@@ -1,4 +1,20 @@
+import type { Metadata } from 'next'
 import Button from "@/components/ui/Button"
+
+export async function generateMetadata(): Promise<Metadata> {
+  return {
+    title: 'Meet Our Team | Physiotherapist Port Credit, Mississauga',
+    description:
+      'Meet the expert physio team at Port Credit Physio And Rehab. Experienced physiotherapists serving Port Credit, Lakeshore Rd East, and all of Mississauga.',
+    alternates: { canonical: 'https://www.portcreditphysio.ca/about/team' },
+    openGraph: {
+      title: 'Meet Our Team | Physiotherapist Port Credit, Mississauga',
+      description:
+        'Meet the expert physio team at Port Credit Physio And Rehab. Experienced physiotherapists serving Port Credit, Lakeshore Rd East, and all of Mississauga.',
+      url: 'https://www.portcreditphysio.ca/about/team',
+    },
+  }
+}
 
 export default function Team() {
     const teamMembers = [
