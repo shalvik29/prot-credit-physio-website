@@ -97,43 +97,66 @@ export default function About() {
                         Our team consists of registered physiotherapists, and registered massage therapists who are passionate about what they do. We stay up-to-date with the latest research and techniques to provide you with the best possible care.
                     </p>
 
-                    {/* Team Preview Card */}
-                    <div className="max-w-3xl mx-auto bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 mb-12">
-                        <div className="md:flex">
-                            {/* Left Column / Avatar */}
-                            <div className="md:flex-shrink-0 bg-navy-dark flex items-center justify-center p-8 md:w-48">
-                                <div className="w-24 h-24 rounded-full bg-steel-blue flex items-center justify-center">
-                                    <svg className="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                                    </svg>
+                    {/* Team Preview Cards */}
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto mb-12">
+                        {/* Simoni Card */}
+                        <div className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+                            <div className="flex flex-col sm:flex-row items-center sm:items-start gap-5 p-6">
+                                <div className="w-28 h-28 rounded-full ring-4 ring-teal-100 flex items-center justify-center flex-shrink-0 overflow-hidden bg-navy-dark">
+                                    <Image
+                                        src="/simoni-bhagat-physiotherapist.jpg"
+                                        alt="Simoni Bhagat — Registered Physiotherapist in Port Credit, Mississauga"
+                                        width={112}
+                                        height={112}
+                                        className="object-cover w-full h-full"
+                                        style={{ objectPosition: '50% 20%' }}
+                                    />
+                                </div>
+                                <div className="text-center sm:text-left flex-1">
+                                    <span className="uppercase tracking-wide text-xs text-teal-600 font-semibold">
+                                        Registered Physiotherapist — PT
+                                    </span>
+                                    <h3 className="mt-1 text-xl font-bold text-navy-dark">Simoni Bhagat</h3>
+                                    <p className="text-gray-500 italic text-xs mt-1">&ldquo;Restore, Rebuild, and Reclaim Your Movement&rdquo;</p>
+                                    <p className="mt-3 text-gray-600 leading-relaxed text-sm">
+                                        Dedicated to helping patients reclaim their lives through evidence-based physiotherapy and personalized care. Specializes in vestibular rehabilitation, McKenzie Method, and chronic pain management.
+                                    </p>
+                                    <div className="mt-4 flex flex-wrap gap-1.5 justify-center sm:justify-start">
+                                        <span className="px-2.5 py-1 bg-teal-50 text-teal-700 text-xs font-medium rounded-full border border-teal-200">Vestibular Rehab</span>
+                                        <span className="px-2.5 py-1 bg-teal-50 text-teal-700 text-xs font-medium rounded-full border border-teal-200">McKenzie Method</span>
+                                        <span className="px-2.5 py-1 bg-teal-50 text-teal-700 text-xs font-medium rounded-full border border-teal-200">Frozen Shoulder</span>
+                                    </div>
                                 </div>
                             </div>
-                            
-                            {/* Right Column / Content */}
-                            <div className="p-8">
-                                <div className="uppercase tracking-wide text-sm text-steel-blue font-semibold">
-                                    Registered Physiotherapist — PT
+                        </div>
+
+                        {/* Rajesh Card */}
+                        <div className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+                            <div className="flex flex-col sm:flex-row items-center sm:items-start gap-5 p-6">
+                                <div className="w-28 h-28 rounded-full ring-4 ring-teal-100 flex items-center justify-center flex-shrink-0 overflow-hidden bg-navy-dark">
+                                    <Image
+                                        src="/rajesh-verma-rmt.jpg"
+                                        alt="Rajesh Verma — Registered Massage Therapist in Port Credit, Mississauga"
+                                        width={112}
+                                        height={112}
+                                        className="object-cover w-full h-full"
+                                        style={{ objectPosition: '50% 25%' }}
+                                    />
                                 </div>
-                                <h3 className="block mt-1 text-2xl leading-tight font-bold text-navy-dark">
-                                    Simoni
-                                </h3>
-                                <p className="mt-1 text-gray-500 italic text-sm">
-                                    &ldquo;The Heart of Your Recovery&rdquo;
-                                </p>
-                                <p className="mt-4 text-gray-600 leading-relaxed text-sm">
-                                    Simoni is dedicated to helping patients reclaim their lives through a blend of skilled manual therapy and active, movement-based rehabilitation. She believes recovery is a partnership—your effort + her expertise = transformation.
-                                </p>
-                                
-                                <div className="mt-6 flex flex-wrap gap-2">
-                                    <span className="px-3 py-1 bg-white-shade text-navy-medium text-xs font-semibold rounded-full border border-steel-blue/20">
-                                        Back Pain & Sciatica
+                                <div className="text-center sm:text-left flex-1">
+                                    <span className="uppercase tracking-wide text-xs text-teal-600 font-semibold">
+                                        Registered Massage Therapist — RMT
                                     </span>
-                                    <span className="px-3 py-1 bg-white-shade text-navy-medium text-xs font-semibold rounded-full border border-steel-blue/20">
-                                        Frozen Shoulder
-                                    </span>
-                                    <span className="px-3 py-1 bg-white-shade text-navy-medium text-xs font-semibold rounded-full border border-steel-blue/20">
-                                        Vestibular Rehab
-                                    </span>
+                                    <h3 className="mt-1 text-xl font-bold text-navy-dark">Rajesh Verma</h3>
+                                    <p className="text-gray-500 italic text-xs mt-1">&ldquo;Helping You Feel and Move Your Best&rdquo;</p>
+                                    <p className="mt-3 text-gray-600 leading-relaxed text-sm">
+                                        Passionate about helping patients reduce pain and improve mobility through personalized massage therapy. Specializing in deep tissue, cupping therapy, and sports recovery massage.
+                                    </p>
+                                    <div className="mt-4 flex flex-wrap gap-1.5 justify-center sm:justify-start">
+                                        <span className="px-2.5 py-1 bg-teal-50 text-teal-700 text-xs font-medium rounded-full border border-teal-200">Deep Tissue Massage</span>
+                                        <span className="px-2.5 py-1 bg-teal-50 text-teal-700 text-xs font-medium rounded-full border border-teal-200">Cupping Therapy</span>
+                                        <span className="px-2.5 py-1 bg-teal-50 text-teal-700 text-xs font-medium rounded-full border border-teal-200">Sports Recovery</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
