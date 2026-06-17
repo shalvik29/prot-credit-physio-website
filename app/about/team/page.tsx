@@ -29,7 +29,6 @@ export default function Team() {
             bio: `Simoni is a dedicated physiotherapist who is passionate about helping individuals move better, feel stronger, and return to the activities they enjoy. She believes that successful rehabilitation follows three essential steps: Restore, Rebuild, and Reclaim.
 
 Her treatment approach combines evidence-based physiotherapy, personalized exercise programs, and patient education to address the root cause of pain and dysfunction. As a trusted physiotherapist in Port Credit and Mississauga, Simoni works closely with each patient to develop a treatment plan that supports long-term recovery, independence, and confidence.`,
-            education: 'Bachelor of Physiotherapy (BPT), Charotar University of Science and Technology (CHARUSAT), India',
             registration: 'Registered Physiotherapist, College of Physiotherapists of Ontario (CPO) — practicing in good standing since 2021',
             clinicalInterest: [
                 'Vestibular Rehabilitation for dizziness, vertigo, and balance disorders',
@@ -82,7 +81,6 @@ Her treatment approach combines evidence-based physiotherapy, personalized exerc
             bio: `Rajesh Verma is a Registered Massage Therapist passionate about helping patients reduce pain, improve mobility, and achieve optimal wellness through personalized massage therapy treatments. At Port Credit Physio & Rehab, he provides massage therapy services in Mississauga, including deep tissue massage, relaxation massage, cupping therapy, headache relief treatment, sports recovery massage, and wellness-focused care.
 
 His approach combines hands-on therapeutic techniques with individualized treatment plans designed to address the root cause of pain and muscle dysfunction. Whether you are recovering from an injury, managing chronic pain, dealing with stress-related tension, or looking to enhance athletic recovery, he is committed to helping you feel and move your best.`,
-            education: 'Registered Massage Therapist',
             registration: 'Registered and in good standing with the College of Massage Therapists of Ontario (CMTO)',
             clinicalInterest: [
                 'Deep Tissue Massage for chronic muscle tension',
@@ -103,9 +101,6 @@ His approach combines hands-on therapeutic techniques with individualized treatm
                 'Stretching & Range of Motion',
             ],
             certifications: [
-                'Registered Massage Therapist (RMT) — CMTO',
-                'Cupping Therapy Certified',
-                'Sports Massage Certification',
             ],
             whyPatients: `Patients in Port Credit and Mississauga choose Rajesh because he takes the time to understand their unique needs and crafts personalized treatment plans that deliver real results. Whether you're an athlete looking to optimize recovery, someone dealing with chronic tension, or simply in need of deep relaxation, Rajesh's skilled hands and compassionate approach make every session effective and restorative.`,
             philosophy: 'I am committed to helping you feel and move your best through personalized, hands-on care.',
@@ -118,6 +113,7 @@ His approach combines hands-on therapeutic techniques with individualized treatm
                 'Myofascial Release',
                 'Stress Reduction',
                 'Injury Recovery Massage',
+                'Bamboo Massage',
             ],
         },
     ]
@@ -173,8 +169,7 @@ His approach combines hands-on therapeutic techniques with individualized treatm
 
                                     {/* Education & Registration */}
                                     <div className="mb-7">
-                                        <h3 className="text-lg font-bold text-navy-dark mb-2">Education & Professional Registration</h3>
-                                        <p className="text-gray-600">{member.education}</p>
+                                        <h3 className="text-lg font-bold text-navy-dark mb-2">Professional Registration</h3>
                                         <p className="text-gray-600 mt-1">{member.registration}</p>
                                     </div>
 
@@ -207,18 +202,20 @@ His approach combines hands-on therapeutic techniques with individualized treatm
                                         </div>
                                     </div>
 
-                                    {/* Certifications */}
-                                    <div className="mb-8">
-                                        <h3 className="text-lg font-bold text-navy-dark mb-3">Professional Development & Certifications</h3>
-                                        <ul className="space-y-2.5">
-                                            {member.certifications.map((item, i) => (
-                                                <li key={i} className="flex gap-3 text-gray-600">
-                                                    <span className="w-2 h-2 bg-teal-500 rounded-full flex-shrink-0 mt-2"></span>
-                                                    <span className="text-sm leading-relaxed">{item}</span>
-                                                </li>
-                                            ))}
-                                        </ul>
-                                    </div>
+                                    {/* Certifications — Simoni only */}
+                                    {member.certifications.length > 1 && (
+                                        <div className="mb-8">
+                                            <h3 className="text-lg font-bold text-navy-dark mb-3">Professional Development & Certifications</h3>
+                                            <ul className="space-y-2.5">
+                                                {member.certifications.map((item, i) => (
+                                                    <li key={i} className="flex gap-3 text-gray-600">
+                                                        <span className="w-2 h-2 bg-teal-500 rounded-full flex-shrink-0 mt-2"></span>
+                                                        <span className="text-sm leading-relaxed">{item}</span>
+                                                    </li>
+                                                ))}
+                                            </ul>
+                                        </div>
+                                    )}
 
                                     {/* Why Patients Love */}
                                     <div className="mb-8">
