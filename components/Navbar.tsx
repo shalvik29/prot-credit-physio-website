@@ -62,6 +62,7 @@ export default function Navbar() {
         { name: 'Home', href: '/' },
         { name: 'About', href: '/about', hasDropdown: true },
         { name: 'Services', href: '/services', hasDropdown: true },
+        { name: 'Blog', href: '/blog' },
         { name: 'FAQ', href: '/faq' },
         { name: 'Contact', href: '/contact' },
     ];

@@ -4,6 +4,8 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 import { FaqJsonLd } from '@/components/JsonLd'
 import ReviewsSection from '@/components/ReviewsSection'
+import BlogCard from '@/components/BlogCard'
+import { getRecentBlogPosts } from '@/lib/blogData'
 
 export async function generateMetadata(): Promise<Metadata> {
   return {
@@ -356,6 +358,46 @@ export default function Home() {
 
       {/* Google Reviews Section */}
       <ReviewsSection />
+
+      {/* Blog Section */}
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-12">
+            <p className="text-sm uppercase tracking-wider text-gray-500 mb-4">
+              Expert Insights
+            </p>
+            <h2 className="text-4xl md:text-5xl font-bold text-navy-dark mb-6">
+              Latest from Our Blog
+            </h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
+              Expert advice on running injuries, recovery strategies, and physiotherapy tips
+              from our team serving Port Credit and Mississauga.
+            </p>
+          </div>
+
+          <div className={`grid gap-8 mb-12 ${
+            getRecentBlogPosts(3).length === 1
+              ? 'grid-cols-1 max-w-md mx-auto'
+              : getRecentBlogPosts(3).length === 2
+              ? 'grid-cols-1 md:grid-cols-2 max-w-3xl mx-auto'
+              : 'grid-cols-1 md:grid-cols-2 lg:grid-cols-3'
+          }`}>
+            {getRecentBlogPosts(3).map((post) => (
+              <BlogCard key={post.id} post={post} variant="compact" />
+            ))}
+          </div>
+
+          <div className="text-center">
+            <Button
+              href="/blog"
+              variant="secondary"
+              style={{ backgroundColor: '#14B8A6', color: 'white' }}
+            >
+              View All Articles
+            </Button>
+          </div>
+        </div>
+      </section>
 
       {/* CTA Section */}
       <section className="bg-steel-blue py-20 px-4 sm:px-6 lg:px-8 text-center text-white">

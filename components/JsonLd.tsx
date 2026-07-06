@@ -93,3 +93,57 @@ export function FaqJsonLd({
     />
   )
 }
+
+export function BlogArticleJsonLd({
+  title,
+  description,
+  url,
+  imageUrl,
+  publishedDate,
+  modifiedDate,
+  authorName,
+  authorUrl,
+}: {
+  title: string
+  description: string
+  url: string
+  imageUrl: string
+  publishedDate: string
+  modifiedDate?: string
+  authorName: string
+  authorUrl?: string
+}) {
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: title,
+    description: description,
+    image: imageUrl,
+    datePublished: publishedDate,
+    dateModified: modifiedDate || publishedDate,
+    author: {
+      '@type': 'Person',
+      name: authorName,
+      url: authorUrl || 'https://www.portcreditphysio.ca/about/team',
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'Port Credit Physio And Rehab',
+      logo: {
+        '@type': 'ImageObject',
+        url: 'https://www.portcreditphysio.ca/logo.png',
+      },
+    },
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': url,
+    },
+  }
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  )
+}
