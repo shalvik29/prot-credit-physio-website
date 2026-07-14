@@ -109,9 +109,6 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
       />
       {post.faqs && <FaqJsonLd faqs={post.faqs} />}
 
-      {/* Spacer for fixed navbar */}
-      <div className="h-20 md:h-24" />
-
       {/* Article Header */}
       <header className="bg-gradient-to-br from-navy-dark via-navy-medium to-steel-blue relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
@@ -243,12 +240,12 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
                 case 'image':
                   return (
                     <figure key={index} className="my-10 -mx-4 sm:mx-0">
-                      <div className="relative w-full aspect-[1488/717] rounded-xl overflow-hidden shadow-md">
+                      <div className="relative w-full aspect-[1316/717] rounded-xl overflow-hidden shadow-md bg-white">
                         <Image
                           src={section.src!}
                           alt={section.alt || post.title}
                           fill
-                          className="object-cover"
+                          className="object-contain"
                           sizes="(max-width: 768px) 100vw, 768px"
                         />
                       </div>

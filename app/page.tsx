@@ -114,6 +114,69 @@ export default function Home() {
         </div>
       </section>
 
+      {/* New Massage Therapy (RMT) Promo Section */}
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white-shade">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+            {/* Content */}
+            <div>
+              <span className="inline-flex items-center gap-2 bg-teal-500 text-white text-xs font-bold uppercase tracking-wider px-4 py-2 rounded-full mb-6 animate-pulse-slow">
+                New at Port Credit Physio & Rehab
+              </span>
+
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-navy-dark mb-4 leading-tight">
+                Now Offering Massage Therapy (RMT)
+              </h2>
+              <p className="text-lg text-gray-600 leading-relaxed mb-8 max-w-xl">
+                Melt away tension with a Registered Massage Therapist and speed up recovery, alongside our physiotherapy care. To celebrate the launch, new clients save on their first session.
+              </p>
+
+              {/* Offer Card */}
+              <div className="bg-white rounded-2xl p-6 md:p-8 shadow-lg mb-8 max-w-xl">
+                <div className="flex items-center gap-5">
+                  <div className="flex-shrink-0 flex flex-col items-center justify-center w-24 h-24 md:w-28 md:h-28 rounded-full bg-teal-500 text-white shadow-lg">
+                    <span className="text-3xl md:text-4xl font-extrabold leading-none">15%</span>
+                    <span className="text-xs font-semibold uppercase tracking-wide">Off</span>
+                  </div>
+                  <div>
+                    <p className="text-navy-dark font-bold text-lg md:text-xl leading-snug">
+                      New Client Offer: 60-Minute Massage
+                    </p>
+                    <p className="text-gray-600 mt-1">
+                      Available <span className="font-semibold text-steel-blue">Fridays &amp; Saturdays</span> only — book your spot before it fills up.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
+                <Link
+                  href="tel:+12894978334"
+                  className="inline-flex items-center justify-center px-8 py-4 text-lg font-bold rounded-md shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300"
+                  style={{ backgroundColor: '#14B8A6', color: '#FFFFFF' }}
+                >
+                  Call Now
+                </Link>
+                <p className="text-gray-500 text-sm">
+                  New clients only. Discount applied to 60-min RMT sessions.
+                </p>
+              </div>
+            </div>
+
+            {/* Image */}
+            <div className="relative h-72 md:h-[420px] rounded-2xl overflow-hidden shadow-2xl order-first lg:order-last">
+              <Image
+                src="/massage.jpeg"
+                alt="Registered Massage Therapy (RMT) session at Port Credit Physio And Rehab Mississauga"
+                fill
+                className="object-cover"
+                sizes="(max-width: 1024px) 100vw, 50vw"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Leading Clinic Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-7xl mx-auto text-center">
