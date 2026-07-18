@@ -226,7 +226,10 @@ export default function Navbar() {
 
             {/* Mobile menu */}
             {isOpen && (
-                <div className={`${mobileMenuBg} md:hidden border-t border-gray-100/20`}>
+                <div
+                    className={`${mobileMenuBg} md:hidden border-t border-gray-100/20 overflow-y-auto overscroll-contain`}
+                    style={{ maxHeight: `calc(100vh - ${bannerHeight + 80}px)` }}
+                >
                     <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                         {navLinks.map((link) => (
                             <div key={link.name}>
