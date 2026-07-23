@@ -6,7 +6,7 @@ import { useState, useEffect } from 'react';
 const TICKER_ITEMS = [
     'Introducing Massage Therapy (RMT) at Port Credit Physio & Rehab',
     'Save 15% on Your First 60-Min RMT Massage',
-    'Available Fridays, Saturdays and Sundays Only',
+    'Available Friday, Saturday and Sunday',
 ]
 
 function TickerContent() {
