@@ -143,7 +143,7 @@ export default function Home() {
                       New Client Offer: 60-Minute Massage
                     </p>
                     <p className="text-gray-600 mt-1">
-                      Available <span className="font-semibold text-steel-blue">Fridays &amp; Saturdays</span> only — book your spot before it fills up.
+                      Available <span className="font-semibold text-steel-blue">Friday, Saturday &amp; Sunday </span> — book your spot before it fills up.
                     </p>
                   </div>
                 </div>
