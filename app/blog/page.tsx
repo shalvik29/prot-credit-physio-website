@@ -6,22 +6,22 @@ import BlogCard from '@/components/BlogCard'
 import { BreadcrumbJsonLd } from '@/components/JsonLd'
 
 export const metadata: Metadata = {
-  title: 'Blog | Running Injury Tips & Physiotherapy Advice | Port Credit Physio',
+  title: 'Blog | Physiotherapy Tips & Recovery Advice | Port Credit Physio',
   description:
-    'Expert articles on running injuries, sports rehabilitation, physiotherapy tips, and recovery advice from Port Credit Physio & Rehab in Mississauga. Learn about runner\'s knee, shin splints, plantar fasciitis, and more.',
+    'Expert articles on physiotherapy, injury recovery, balance training, and rehabilitation from Port Credit Physio & Rehab in Mississauga. Practical advice to help you move and feel better.',
   keywords: [
     'physiotherapy blog Mississauga',
-    'running injury blog Port Credit',
+    'injury recovery advice Port Credit',
+    'balance and fall prevention tips',
     'sports rehab articles',
     'physiotherapy tips Mississauga',
-    'running pain advice',
-    'injury prevention blog',
+    'vestibular rehabilitation advice',
     'Port Credit Physio blog',
   ],
   openGraph: {
-    title: 'Blog | Running Injury Tips & Physiotherapy Advice | Port Credit Physio',
+    title: 'Blog | Physiotherapy Tips & Recovery Advice | Port Credit Physio',
     description:
-      'Expert articles on running injuries, sports rehabilitation, and physiotherapy advice from Port Credit Physio & Rehab in Mississauga.',
+      'Expert articles on physiotherapy, injury recovery, balance training, and rehabilitation from Port Credit Physio & Rehab in Mississauga.',
     url: 'https://www.portcreditphysio.ca/blog',
     images: [
       {
@@ -58,11 +58,11 @@ export default function BlogPage() {
           </p>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
             Physiotherapy &<br />
-            <span className="text-teal-300">Running Injury</span> Insights
+            <span className="text-teal-300">Recovery</span> Insights
           </h1>
           <p className="text-lg md:text-xl text-gray-200 max-w-3xl mx-auto leading-relaxed">
-            Expert advice on running injuries, recovery strategies, and rehabilitation tips from our
-            physiotherapy team serving Port Credit, Mississauga, and surrounding communities.
+            Expert advice on injury recovery, balance and mobility, and physiotherapy tips from our
+            team serving Port Credit, Mississauga, and surrounding communities.
           </p>
         </div>
       </section>
@@ -81,8 +81,8 @@ export default function BlogPage() {
               <div className="text-6xl mb-6">📝</div>
               <h2 className="text-2xl font-bold text-navy-dark mb-4">Coming Soon</h2>
               <p className="text-gray-600 max-w-lg mx-auto">
-                We're working on helpful articles about running injuries, physiotherapy,
-                and recovery. Check back soon for expert insights from our team.
+                We're working on helpful articles about physiotherapy, injury recovery,
+                and wellness. Check back soon for expert insights from our team.
               </p>
             </div>
           )}
@@ -93,11 +93,11 @@ export default function BlogPage() {
       <section className="bg-gradient-to-r from-navy-dark to-steel-blue py-20 px-4 sm:px-6 lg:px-8 text-center text-white">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Have a Running Injury? We Can Help
+            Dealing With Pain or Unsteadiness? We Can Help
           </h2>
           <p className="text-xl mb-10 text-gray-100 leading-relaxed">
-            Don't let pain keep you on the sidelines. Book a free 15-minute consultation
-            with our physiotherapy team and discover the path to pain-free running.
+            Don't let pain or instability hold you back. Book a free 15-minute consultation
+            with our physiotherapy team and discover your path to feeling your best.
           </p>
           <Link
             href="https://portcreditphysioandrehab.janeapp.com/"

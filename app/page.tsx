@@ -433,7 +433,7 @@ export default function Home() {
               Latest from Our Blog
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              Expert advice on running injuries, recovery strategies, and physiotherapy tips
+              Expert advice on injury recovery, balance training, and physiotherapy tips
               from our team serving Port Credit and Mississauga.
             </p>
           </div>

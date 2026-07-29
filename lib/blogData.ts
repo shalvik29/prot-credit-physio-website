@@ -48,6 +48,268 @@ export interface BlogCTA {
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 'balance-training-fall-prevention-port-credit',
+    slug: 'why-am-i-losing-my-balance-how-to-improve-stability-and-prevent-falls',
+    title: 'Why Am I Losing My Balance? How to Improve Stability and Prevent Falls',
+    subtitle: 'Balance Training in Port Credit: Improve Stability, Prevent Falls, and Stay Active',
+    excerpt: 'Feeling unsteady or worried about falling? Learn what causes balance problems and how physiotherapy and balance training in Port Credit, Mississauga can improve stability and reduce your risk of falls.',
+    metaDescription: 'Feeling unsteady or worried about falling? Learn what causes balance problems and how physiotherapy and balance training in Port Credit, Mississauga can improve stability, reduce fall risk, and keep you independent.',
+    keywords: [
+      'balance training Port Credit',
+      'fall prevention physiotherapy Mississauga',
+      'vestibular rehabilitation Mississauga',
+      'why am I losing my balance',
+      'balance exercises for seniors',
+      'dizziness treatment Port Credit',
+      'stability exercises for adults',
+      'fall risk assessment physiotherapy',
+      'physiotherapist for balance problems',
+    ],
+    author: {
+      name: 'Simoni Bhagat',
+      credentials: 'Registered Physiotherapist & Certified Vestibular Specialist',
+      bio: 'Simoni Bhagat is a Registered Physiotherapist and Certified Vestibular Specialist, and the owner of Port Credit Physio & Rehab, practising in good standing with the College of Physiotherapists of Ontario (CPO) since 2021. With particular expertise in vestibular rehabilitation, dizziness, and balance disorders, she helps adults across Port Credit and Mississauga rebuild stability and confidence. Guided by her philosophy of Restore, Rebuild, and Reclaim, she combines evidence-based physiotherapy, personalized exercise programs, and patient education to treat the root cause of unsteadiness rather than just the symptoms.',
+      image: '/simoni-bhagat-physiotherapist.jpg',
+    },
+    publishedDate: '2026-08-01',
+    category: 'Balance & Vestibular',
+    tags: [
+      'balance training',
+      'fall prevention',
+      'vestibular rehabilitation',
+      'dizziness',
+      'senior health',
+      'stability exercises',
+      'physiotherapy Mississauga',
+    ],
+    image: '/balance-training-blog-cover.jpg',
+    imageAlt: 'Why You Feel Less Steady on Your Feet and What You Can Do About It — Port Credit Physio & Rehab',
+    content: [
+      {
+        type: 'paragraph',
+        content: 'Have you noticed that you feel less steady on your feet than you used to? Perhaps stairs feel more demanding, you find yourself avoiding uneven sidewalks, or a quiet worry about falling has started to shape the way you move through your day. If any of this sounds familiar, you are far from alone.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Many adults assume that feeling unsteady is simply a normal part of getting older, something to be tolerated rather than treated. While it is true that some age-related changes can affect balance, unsteadiness is not something you have to accept. In most cases, balance can be measurably improved with the right exercises and guidance.',
+      },
+      {
+        type: 'paragraph',
+        content: 'At Port Credit Physio & Rehab, we regularly help adults across Port Credit and Mississauga regain their stability and reduce their risk of falls through personalized physiotherapy programs. The first step is understanding what balance really is, why it changes, and what can be done to rebuild it safely.',
+      },
+      {
+        type: 'heading',
+        content: 'Why Balance Matters More Than You Think',
+      },
+      {
+        type: 'paragraph',
+        content: 'Balance is easy to take for granted, because it works quietly in the background of almost everything you do. It is at work when you walk across a room, climb a flight of stairs, rise from a chair, carry groceries in from the car, or simply turn to look over your shoulder. You rarely notice it until it begins to fail.',
+      },
+      {
+        type: 'paragraph',
+        content: 'When balance falters, the consequences reach beyond the occasional stumble. Falls are one of the leading causes of injury among older adults, and a single fall can affect confidence, independence, and quality of life for months afterward. The encouraging reality is that balance is trainable, much like strength or flexibility.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Because balance underpins so much of daily life, even small improvements can have an outsized effect. Steadier footing means more freedom to stay active, socialize, travel, and do the things you enjoy without the constant background worry of losing your footing. Protecting your balance is, in a very real sense, protecting your independence.',
+      },
+      {
+        type: 'heading',
+        content: '5 Signs Your Balance May Need Attention',
+      },
+      {
+        type: 'paragraph',
+        content: 'One of the challenges with balance is that it tends to decline gradually, so the early warning signs are easy to overlook until a fall finally forces the issue. Paying attention to these signals early gives you the best chance to act before an injury occurs. Consider booking an assessment if you notice any of the following.',
+      },
+      {
+        type: 'subheading',
+        content: '1. Feeling Unsteady While Walking',
+      },
+      {
+        type: 'paragraph',
+        content: 'If you find yourself drifting to one side, wobbling, or reaching for walls and furniture as you move through your home, your balance system may be asking for help. This kind of low-level uncertainty often develops so slowly that you adapt to it without realizing how much it has changed your movement.',
+      },
+      {
+        type: 'subheading',
+        content: '2. Difficulty Standing on One Leg',
+      },
+      {
+        type: 'paragraph',
+        content: 'Standing on a single leg is a simple, revealing test of both balance and lower-body strength. If holding the position for more than a few seconds feels genuinely difficult or unsafe, it can be an early sign that your stability and supporting muscles need attention before the problem progresses further.',
+      },
+      {
+        type: 'subheading',
+        content: '3. A Growing Fear of Falling',
+      },
+      {
+        type: 'paragraph',
+        content: 'Fear of falling is significant even if you have never actually fallen. When worry leads you to avoid activity, the resulting loss of strength and confidence can quietly make your balance worse, creating a cycle in which fear and physical decline feed one another. Addressing that fear early helps break the cycle.',
+      },
+      {
+        type: 'subheading',
+        content: '4. Frequent Stumbling or Tripping',
+      },
+      {
+        type: 'paragraph',
+        content: 'Regularly catching your foot on curbs, rugs, thresholds, or stairs is more than simple clumsiness. It can point to changes in coordination, reduced strength, or a balance system that is no longer reacting as quickly as it once did. Repeated near-misses are worth taking seriously rather than brushing aside.',
+      },
+      {
+        type: 'subheading',
+        content: '5. Dizziness or Lightheadedness',
+      },
+      {
+        type: 'paragraph',
+        content: 'Some balance problems originate in the inner ear, the home of your vestibular system, and produce dizziness or a spinning sensation when you move your head or change position. These symptoms respond well to specialized vestibular rehabilitation, so they should never be dismissed as something you simply have to live with.',
+      },
+      {
+        type: 'heading',
+        content: 'What Causes Balance Problems?',
+      },
+      {
+        type: 'paragraph',
+        content: 'Good balance is not the job of any single body part. It depends on several systems working together in concert, including your muscles, your joints, your vision, and your inner ear, all coordinated by the brain. When even one of these systems is impaired, your overall stability can suffer in ways that feel hard to pin down.',
+      },
+      {
+        type: 'subheading',
+        content: 'Muscle Weakness',
+      },
+      {
+        type: 'paragraph',
+        content: 'Strong muscles, particularly in the legs, hips, and core, form the foundation that keeps you upright and lets you recover quickly when you trip or shift your weight. As strength fades, everyday tasks become harder and the risk of falling climbs. Rebuilding this foundation is often the single most effective place to begin.',
+      },
+      {
+        type: 'subheading',
+        content: 'Inner Ear or Vestibular Dysfunction',
+      },
+      {
+        type: 'paragraph',
+        content: 'Your vestibular system, located deep within the inner ear, tells your brain where your body is in space and how it is moving. When it is not working properly, the result can be dizziness, vertigo, and a persistent sense of being off balance. This is a common and very treatable source of instability.',
+      },
+      {
+        type: 'subheading',
+        content: 'Reduced Flexibility and Joint Mobility',
+      },
+      {
+        type: 'paragraph',
+        content: 'Stiffness in the ankles, hips, or spine limits how freely your body can move and react. When a joint cannot adjust quickly, your body loses one of the tools it relies on to correct itself in the split second after a misstep, making a stumble more likely to become a fall.',
+      },
+      {
+        type: 'subheading',
+        content: 'Vision Changes',
+      },
+      {
+        type: 'paragraph',
+        content: 'Your eyes constantly feed your brain information about your surroundings and your position within them. As vision changes with age or eye conditions, that stream of information becomes less reliable, and balance often suffers most in dim lighting, on stairs, or in unfamiliar environments where the eyes work harder.',
+      },
+      {
+        type: 'subheading',
+        content: 'Neurological and Medical Conditions',
+      },
+      {
+        type: 'paragraph',
+        content: 'Certain conditions can directly affect coordination, strength, and stability. When a medical condition is part of the picture, a tailored physiotherapy program can make a meaningful difference to safety and confidence. These include:',
+      },
+      {
+        type: 'list',
+        items: [
+          "Parkinson's disease",
+          'Stroke recovery',
+          'Multiple sclerosis',
+          'Arthritis',
+          'Peripheral neuropathy',
+        ],
+      },
+      {
+        type: 'heading',
+        content: 'How Physiotherapy Can Improve Your Balance',
+      },
+      {
+        type: 'paragraph',
+        content: 'Because balance problems can stem from so many different sources, effective treatment begins with finding out which systems are actually involved in your case. A physiotherapist is trained to identify the underlying cause rather than treating the symptom alone, and then to build a plan tailored specifically to your needs and goals.',
+      },
+      {
+        type: 'paragraph',
+        content: 'At Port Credit Physio & Rehab, your assessment may include balance and stability testing, a walking and gait analysis, a strength assessment, a vestibular screening, a mobility evaluation, and a fall-risk assessment. Together these build a clear picture of why you feel unsteady and where the most valuable improvements can be made.',
+      },
+      {
+        type: 'paragraph',
+        content: 'From there, your treatment is matched to what the assessment reveals. Strength training rebuilds the lower-body and core foundation that keeps you stable. Balance retraining uses exercises that safely and progressively challenge your stability so it improves over time, much as a muscle grows stronger when it is gradually asked to do more.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Where dizziness or an inner-ear condition is involved, vestibular rehabilitation can retrain the brain to reduce symptoms and restore steadiness. Gait training refines your walking mechanics to build confidence, and fall-prevention education helps you navigate daily activities and your home environment more safely.',
+      },
+      {
+        type: 'heading',
+        content: '5 Simple Balance Exercises for Adults',
+      },
+      {
+        type: 'paragraph',
+        content: 'Alongside professional care, gentle practice at home can help reinforce your progress. The following exercises are commonly used to build stability when performed regularly and safely. Move slowly, stay near a stable surface for support, and stop if anything causes pain or significant dizziness.',
+      },
+      {
+        type: 'list',
+        items: [
+          'Single-leg standing: Stand beside a countertop for support and balance on one leg for ten to thirty seconds, then switch sides. Hold the counter as lightly as you safely can, reducing your reliance on it as you improve over the following weeks.',
+          'Heel-to-toe walking: Walk slowly in a straight line, placing the heel of one foot directly in front of the toes of the other, as though walking along a tightrope. This narrows your base of support and trains the fine control that steadies your everyday stride.',
+          'Sit-to-stand: Practise rising from a sturdy chair without pushing off with your hands, then lowering yourself back down with control. This builds the leg and core strength that powers nearly every transition you make throughout the day.',
+          'Marching in place: Holding a counter if needed, lift each knee in turn while keeping your posture tall and your core engaged. The exercise trains single-leg stability and coordination in a controlled, low-risk way that translates directly to safer walking.',
+          'Side stepping: Take slow, controlled steps sideways in each direction, keeping your toes pointing forward. This strengthens the hip muscles responsible for lateral stability, which are key to staying upright when you turn, reach, or step around an obstacle.',
+        ],
+      },
+      {
+        type: 'callout',
+        content: 'Always consult a healthcare professional before starting a new exercise program, especially if you have a history of falls, dizziness, or a medical condition affecting your balance. A physiotherapist can confirm which exercises are appropriate and safe for your specific situation.',
+        variant: 'warning',
+      },
+      {
+        type: 'heading',
+        content: 'Balance Training in Port Credit and Mississauga',
+      },
+      {
+        type: 'paragraph',
+        content: 'You do not have to accept poor balance as an unavoidable part of growing older. With the right support, most adults can become noticeably steadier, stronger, and more confident on their feet, whatever their starting point or age.',
+      },
+      {
+        type: 'paragraph',
+        content: 'At Port Credit Physio & Rehab, we provide evidence-based balance training, fall-prevention programs, vestibular rehabilitation, and physiotherapy treatments designed to help adults move with greater confidence and independence. Whether you are managing dizziness, recovering from an injury, or simply want to stay active as you age, our team can help.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Our goal goes beyond reducing your immediate symptoms. We want you to rebuild genuine strength and stability, so you feel safe doing the everyday things that matter to you, from walking the Port Credit waterfront to playing with grandchildren, without that constant worry of losing your footing holding you back.',
+      },
+    ],
+    faqs: [
+      {
+        question: 'Is losing my balance just a normal part of aging?',
+        answer: 'Some changes to balance can come with age, but feeling unsteady is not something you simply have to accept. In most cases, balance can be measurably improved with targeted strength work, balance retraining, and, where needed, vestibular rehabilitation. Age is rarely the whole story.',
+      },
+      {
+        question: 'When should I see a physiotherapist about my balance?',
+        answer: 'Consider an assessment if you have had a recent fall, feel dizzy or unsteady, avoid activities out of fear of falling, struggle on uneven surfaces, notice your balance worsening over time, or have a neurological condition affecting your mobility. Early intervention leads to better outcomes. You can book a free 15-minute consultation to discuss your symptoms.',
+      },
+      {
+        question: 'Can physiotherapy actually help prevent falls?',
+        answer: 'Yes. By identifying why you feel unsteady and then strengthening the muscles, retraining the balance systems, and improving the walking mechanics involved, physiotherapy directly targets the factors that cause falls. Fall-prevention education adds practical strategies for navigating your home and daily life more safely.',
+      },
+      {
+        question: 'What is vestibular rehabilitation?',
+        answer: 'Vestibular rehabilitation is a specialized form of physiotherapy for balance problems that originate in the inner ear, such as vertigo, dizziness, and unsteadiness when moving your head. It uses specific exercises to retrain the brain and reduce symptoms. Our vestibular rehabilitation service is led by a certified vestibular specialist.',
+      },
+      {
+        question: 'Do I need to stop being active if my balance is poor?',
+        answer: 'Usually not, and staying appropriately active is often part of the solution rather than something to avoid. The key is doing the right activities safely. A physiotherapist can guide you toward movement that builds your stability and confidence rather than putting you at unnecessary risk.',
+      },
+    ],
+    cta: {
+      title: 'Book Your Balance Assessment Today',
+      description: 'If you have started to feel unsteady, the best time to act is before a fall makes the decision for you. Improving your balance is rarely as difficult as people fear, and the gains in confidence and freedom are well worth the effort. Not sure if physiotherapy is right for you? Schedule a complimentary 15-minute consultation to talk through your symptoms.',
+      buttonText: 'Book Your Free 15-Minute Consultation',
+      buttonLink: 'https://portcreditphysioandrehab.janeapp.com/',
+      variant: 'primary',
+    },
+  },
+  {
     id: 'running-pain-mississauga',
     slug: 'why-does-running-cause-knee-heel-or-shin-pain',
     title: 'Why Does Running Cause Knee, Heel or Shin Pain?',
