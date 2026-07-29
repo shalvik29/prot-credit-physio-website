@@ -71,7 +71,7 @@ export const blogPosts: BlogPost[] = [
       bio: 'Simoni Bhagat is a Registered Physiotherapist and Certified Vestibular Specialist, and the owner of Port Credit Physio & Rehab, practising in good standing with the College of Physiotherapists of Ontario (CPO) since 2021. With particular expertise in vestibular rehabilitation, dizziness, and balance disorders, she helps adults across Port Credit and Mississauga rebuild stability and confidence. Guided by her philosophy of Restore, Rebuild, and Reclaim, she combines evidence-based physiotherapy, personalized exercise programs, and patient education to treat the root cause of unsteadiness rather than just the symptoms.',
       image: '/simoni-bhagat-physiotherapist.jpg',
     },
-    publishedDate: '2026-08-01',
+    publishedDate: '2026-07-29',
     category: 'Balance & Vestibular',
     tags: [
       'balance training',
