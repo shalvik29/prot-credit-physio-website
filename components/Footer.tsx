@@ -41,12 +41,16 @@ export default function Footer() {
                                 <span>10:00am – 8:00pm</span>
                             </li>
                             <li className="flex justify-between gap-4">
-                                <span>Friday – Saturday</span>
-                                <span>10:00am – 4:00pm</span>
+                                <span>Friday</span>
+                                <span>10:00am – 7:00pm</span>
+                            </li>
+                            <li className="flex justify-between gap-4">
+                                <span>Saturday</span>
+                                <span>8:00am – 4:00pm</span>
                             </li>
                             <li className="flex justify-between gap-4">
                                 <span>Sunday</span>
-                                <span>10:00am – 2:00pm</span>
+                                <span>8:00am – 2:00pm</span>
                             </li>
                         </ul>
                     </div>
