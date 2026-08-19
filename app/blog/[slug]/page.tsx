@@ -337,7 +337,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
           {post.faqs && post.faqs.length > 0 && (
             <div className="mt-12 pt-8 border-t border-gray-200">
               <h2 className="text-2xl md:text-3xl font-bold text-navy-dark mb-8">
-                Frequently Asked Questions About Running Pain
+                Frequently Asked Questions
               </h2>
               <div className="space-y-6">
                 {post.faqs.map((faq, index) => (

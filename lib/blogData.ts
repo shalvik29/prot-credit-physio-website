@@ -562,6 +562,657 @@ export const blogPosts: BlogPost[] = [
       variant: 'primary',
     },
   },
+  {
+    id: 'benefits-of-massage-therapy-mississauga',
+    slug: 'benefits-of-massage-therapy-mississauga',
+    title: 'Massage Therapy in Mississauga: 7 Benefits and What to Expect',
+    subtitle: 'Registered Massage Therapy in Port Credit — What It Actually Helps With, and What Your First Session Looks Like',
+    excerpt: 'Wondering what registered massage therapy actually treats? Learn the 7 evidence-backed benefits of massage, how to choose between deep tissue and Swedish, and what happens at your first RMT appointment in Port Credit.',
+    metaDescription: 'Registered Massage Therapy in Port Credit, Mississauga. What RMT massage actually helps with, which technique suits you, and what your first session looks like.',
+    keywords: [
+      'massage therapy Mississauga',
+      'RMT Mississauga',
+      'registered massage therapist Port Credit',
+      'deep tissue massage Mississauga',
+      'massage therapy near me',
+      'direct billing massage Mississauga',
+      'how often should I get a massage',
+      'deep tissue vs Swedish massage',
+      'does insurance cover massage therapy in Ontario',
+      'do I need a referral for massage therapy Ontario',
+      'what to expect at first RMT appointment',
+    ],
+    author: {
+      name: 'Rajesh Verma',
+      credentials: 'Registered Massage Therapist (CMTO)',
+      bio: 'Rajesh Verma is a Registered Massage Therapist at Port Credit Physio & Rehab, registered and in good standing with the College of Massage Therapists of Ontario (CMTO). He is passionate about helping patients reduce pain, improve mobility, and achieve optimal wellness through personalized massage therapy, including deep tissue massage, Swedish massage, cupping therapy, sports recovery massage, and headache relief treatment. His approach combines hands-on therapeutic technique with individualized treatment plans designed to address the root cause of pain and muscle dysfunction, so every session is effective, restorative, and tailored to the person on the table.',
+      image: '/rajesh-verma-rmt.jpg',
+    },
+    publishedDate: '2026-08-18',
+    category: 'Massage Therapy',
+    tags: [
+      'massage therapy',
+      'registered massage therapist',
+      'deep tissue massage',
+      'Swedish massage',
+      'stress relief',
+      'pain management',
+      'sports recovery',
+      'Mississauga',
+      'Port Credit',
+    ],
+    image: '/massage-therapy-benefits-mississauga-cover.jpg',
+    imageAlt: 'Registered Massage Therapist treating a client\'s shoulders at Port Credit Physio & Rehab in Mississauga',
+    content: [
+      {
+        type: 'paragraph',
+        content: 'Most people book their first massage for one of two reasons: something hurts, or everything feels wound too tight.',
+      },
+      {
+        type: 'paragraph',
+        content: 'If you\'ve been carrying tension between your shoulder blades for weeks, waking up with a stiff neck, or hitting a wall in your training recovery, massage therapy is worth understanding properly — not as a spa treat, but as regulated healthcare.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Here\'s what registered massage therapy genuinely does, who it helps most, and what a first appointment at our Port Credit clinic actually looks like.',
+      },
+      {
+        type: 'heading',
+        content: '7 Evidence-Backed Benefits of Massage Therapy',
+      },
+      {
+        type: 'subheading',
+        content: '1. Relief From Muscle Tension and Persistent Pain',
+      },
+      {
+        type: 'paragraph',
+        content: 'This is the one people feel first. Sustained pressure on tight muscle tissue and trigger points reduces resting muscle tone and eases the local discomfort that comes with it.',
+      },
+      {
+        type: 'paragraph',
+        content: 'It\'s most commonly used to help manage:',
+      },
+      {
+        type: 'list',
+        items: [
+          'Lower back and gluteal tightness, including tension contributing to sciatic symptoms',
+          'Neck, shoulder and upper back stiffness — the "tech neck" pattern from laptop and phone use',
+          'Ongoing muscular pain associated with conditions like fibromyalgia and osteoarthritis, as part of a broader care plan',
+        ],
+      },
+      {
+        type: 'paragraph',
+        content: 'Massage manages these symptoms well. For longer-standing problems it works best paired with strengthening work, which is why we often run it alongside physiotherapy rather than on its own.',
+      },
+      {
+        type: 'subheading',
+        content: '2. Lower Stress and a Calmer Nervous System',
+      },
+      {
+        type: 'paragraph',
+        content: 'Massage reliably shifts your body out of a sympathetic "on alert" state into a parasympathetic "rest and recover" one. In practice that means a slower heart rate, slower breathing, and a drop in the physical restlessness that comes with sustained stress.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Research in this area consistently shows reductions in self-reported anxiety and improvements in mood following massage. If you carry stress physically — jaw, shoulders, upper back — the mental effect and the muscular effect tend to arrive together.',
+      },
+      {
+        type: 'subheading',
+        content: '3. Fewer, Milder Tension Headaches',
+      },
+      {
+        type: 'paragraph',
+        content: 'A large share of everyday headaches are muscular in origin, driven by tightness in the suboccipital muscles at the base of the skull, the upper traps, and the jaw.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Targeted work through the neck, scalp and shoulders can reduce the frequency and intensity of tension-type headaches for many people. It\'s one of the most common reasons clients book with us, and often one of the fastest things to respond.',
+      },
+      {
+        type: 'subheading',
+        content: '4. Better Local Circulation',
+      },
+      {
+        type: 'paragraph',
+        content: 'Massage increases blood flow to the tissue being worked on. Better local circulation means more oxygen and nutrients reaching the area, which supports tissue recovery and contributes to the warm, loosened feeling afterwards.',
+      },
+      {
+        type: 'callout',
+        content: 'A note on "flushing out toxins": you\'ll see this claim everywhere in massage marketing. It isn\'t accurate — your liver and kidneys handle that, and massage doesn\'t change it. The circulatory benefits are real; the detox framing isn\'t. We\'d rather tell you the truth about what we do.',
+        variant: 'info',
+      },
+      {
+        type: 'subheading',
+        content: '5. Improved Flexibility and Range of Motion',
+      },
+      {
+        type: 'paragraph',
+        content: 'Long hours seated shorten your hip flexors and chest muscles while your upper back and glutes go quiet. The result is a posture that feels stuck and joints that don\'t want to move through their full range.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Massage reduces resistance in shortened, guarded tissue, which makes stretching and movement work more comfortable and more effective. Think of it as opening a window — you still have to do the mobility and strength work to keep it open, but it makes starting far easier.',
+      },
+      {
+        type: 'subheading',
+        content: '6. Faster, More Comfortable Recovery From Training',
+      },
+      {
+        type: 'paragraph',
+        content: 'For runners, lifters and weekend athletes, the best-supported benefit is a reduction in delayed onset muscle soreness (DOMS) and an improvement in how recovered you feel in the days after hard training.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Massage also helps maintain tissue mobility around older injuries and scar tissue as part of a rehab plan. It won\'t replace your recovery basics — sleep, food, sensible load progression — but it makes the back half of a training block considerably more tolerable.',
+      },
+      {
+        type: 'subheading',
+        content: '7. Better Sleep',
+      },
+      {
+        type: 'paragraph',
+        content: 'Less pain and a calmer nervous system make it easier to fall asleep and stay asleep. Clients frequently tell us the night after a treatment is the best sleep they\'ve had in weeks — and since sleep is when the bulk of tissue repair happens, that benefit compounds.',
+      },
+      {
+        type: 'heading',
+        content: 'Which Massage Technique Is Right for You?',
+      },
+      {
+        type: 'paragraph',
+        content: 'You don\'t need to decide before you arrive — your therapist will assess and recommend. But it helps to know the options.',
+      },
+      {
+        type: 'list',
+        items: [
+          'Deep Tissue Massage — Slower, firmer work through the deeper muscle layers. Best for stubborn knots, long-standing tightness, and people who find lighter pressure doesn\'t touch the problem. Expect some tenderness for a day afterwards.',
+          'Swedish Massage — Longer, flowing strokes at lighter to moderate pressure. Best for general tension, stress relief, and anyone new to massage or sensitive to firm pressure.',
+          'Sports Massage — Built around athletic demands, whether that\'s pre-event preparation, post-event recovery, or in-season maintenance for a specific sport.',
+          'Trigger Point Release — Sustained, focused pressure on the specific tight bands that refer pain elsewhere. This is what\'s used when a knot in your shoulder is producing a headache.',
+          'Myofascial Release — Slower, sustained work on the connective tissue surrounding your muscles rather than the muscle belly itself. Useful for broad restriction and areas that feel bound down rather than knotted.',
+          'Head Massage with Acupressure — Focused relief through the scalp, temples and base of the skull. Popular with headache, sinus pressure and jaw tension clients.',
+          'Add-ons — Cupping therapy and hot stone therapy can be integrated into a session for enhanced tissue release where appropriate.',
+        ],
+      },
+      {
+        type: 'subheading',
+        content: 'Deep Tissue or Swedish — How Do I Choose?',
+      },
+      {
+        type: 'paragraph',
+        content: 'The short version: if you want to feel relaxed, Swedish; if you want to feel changed, deep tissue.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Deeper is not automatically better. Pressure that has you clenched and holding your breath is counterproductive — your muscles guard against it. Effective pressure should feel intense but breathable. Tell your therapist during the session, not afterwards; adjusting pressure is completely normal and expected.',
+      },
+      {
+        type: 'heading',
+        content: 'Who Gets the Most Out of Massage Therapy?',
+      },
+      {
+        type: 'list',
+        items: [
+          'Desk workers and hybrid workers — For the postural strain of long screen hours, especially neck, upper back and forearm tension. If you\'ve added home-office hours without adding a proper setup, this is likely you.',
+          'Runners, gym-goers and weekend athletes — For recovery between sessions, in-season maintenance, and keeping older niggles from becoming injuries.',
+          'Older adults — For joint stiffness, general mobility and circulation, using gentler pressure and technique appropriate to the individual.',
+          'People in rehab — Alongside physiotherapy, to maintain tissue mobility, manage compensating muscles, and keep you comfortable enough to do the rehab exercises that drive the recovery.',
+          'People under sustained stress — Where tension has become physical: clenched jaw, tight shoulders, disrupted sleep.',
+        ],
+      },
+      {
+        type: 'heading',
+        content: 'What Your First Appointment Looks Like',
+      },
+      {
+        type: 'paragraph',
+        content: 'New to massage therapy? Here\'s exactly what happens, so nothing catches you off guard.',
+      },
+      {
+        type: 'list',
+        items: [
+          'Before you\'re on the table (10 minutes) — A short health history, a conversation about what\'s bothering you and what you want out of the session, and a quick assessment of the relevant area. This is also where you flag anything relevant — pregnancy, recent injuries, medications, medical conditions, or areas you\'d rather not have worked on.',
+          'Consent and draping — You undress only to your level of comfort. You\'re covered by a sheet throughout, with only the area being worked on exposed. Your therapist leaves the room while you get on the table. You can decline any technique or area at any point, and you can end the session at any time. That\'s your right, and it\'s set out in CMTO standards.',
+          'The treatment — Typically 45–50 minutes of hands-on work in a 60-minute appointment. Speak up about pressure at any point — during, not after.',
+          'Afterwards — You\'ll get self-care suggestions: stretches, hydration, heat, and how often to come back. Some tenderness for 24–48 hours after deeper work is normal.',
+          'Receipts and billing — You\'ll receive an RMT receipt with the therapist\'s CMTO registration number, which is what your insurer needs. We direct bill most major providers, so in most cases you won\'t pay up front.',
+        ],
+      },
+      {
+        type: 'heading',
+        content: 'Why Port Credit Physio & Rehab',
+      },
+      {
+        type: 'paragraph',
+        content: 'We\'re on Lakeshore Road East in Port Credit, serving clients from across Mississauga — Lorne Park, Clarkson, Cooksville, Erindale and beyond.',
+      },
+      {
+        type: 'list',
+        items: [
+          'Registered and regulated — Treatment with a Registered Massage Therapist regulated by the College of Massage Therapists of Ontario, providing evidence-based care',
+          'No referral needed — Book directly',
+          'Direct billing — To most major insurers, plus MVA and WSIB claims',
+          'Private treatment rooms — Dedicated, clean, private spaces; not curtained bays',
+          'One-on-one care — Your full appointment with your therapist',
+          'Friday evenings and weekends — RMT appointments on Friday evening, Saturday and Sunday, so you don\'t have to take time off work',
+          'Massage and physiotherapy under one roof — If your tension is coming from something structural, you don\'t need a second clinic to find out',
+          'Free 2-hour parking — Lot 7 and Lot 12 nearby, plus street parking in front',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'Do I need a doctor\'s referral for massage therapy in Ontario?',
+        answer: 'No. You can book directly with a Registered Massage Therapist. Some extended health plans require a physician\'s note before they\'ll reimburse, so it\'s worth a quick call to your insurer before your first visit.',
+      },
+      {
+        question: 'Does insurance cover massage therapy in Ontario?',
+        answer: 'Most extended health plans include an annual RMT allowance, commonly between $300 and $750 per year. Massage therapy is not covered by OHIP. We direct bill most major insurers.',
+      },
+      {
+        question: 'How often should I get a massage?',
+        answer: 'It depends on what you\'re managing. For an acute problem, weekly or every two weeks until it settles. For general maintenance and stress, every four to six weeks suits most people. For athletes in a heavy training block, every two to three weeks is common. Your massage therapist will suggest a schedule after your first session rather than selling you a package up front.',
+      },
+      {
+        question: 'How long should my appointment be?',
+        answer: '30 minutes suits one focused area — neck and shoulders, for example. 60 minutes is the most popular and covers a full region properly. 90 minutes is best for full-body work or multiple problem areas.',
+      },
+      {
+        question: 'Should a massage hurt?',
+        answer: 'It shouldn\'t be painful. Deep tissue work can feel intense, but you should be able to breathe normally through it. Pain that makes you tense up is counterproductive — say something and the pressure will be adjusted.',
+      },
+      {
+        question: 'Is it normal to feel sore afterwards?',
+        answer: 'Yes, particularly after deep tissue or trigger point work. Mild tenderness for 24–48 hours is common. Drink water, move gently, and use heat if it helps. Sharp or worsening pain isn\'t normal — contact us.',
+      },
+      {
+        question: 'Can I have massage therapy while pregnant?',
+        answer: 'Generally yes, with appropriate positioning and technique. Let us know at booking so the session is set up correctly, and check with your care provider if you have a high-risk pregnancy.',
+      },
+      {
+        question: 'What\'s the difference between massage therapy and physiotherapy?',
+        answer: 'Massage therapy works on soft tissue to reduce tension and pain. Physiotherapy assesses movement and builds strength and function through exercise. They complement each other well, which is why many of our clients use both — massage makes the movement comfortable, physiotherapy makes it last.',
+      },
+    ],
+    cta: {
+      title: 'Book Your Massage in Port Credit',
+      description: 'Whether you\'re managing pain, unwinding after a heavy few months, or recovering from training, a Registered Massage Therapist is a straightforward place to start. No referral needed, and we direct bill most major insurers.',
+      buttonText: 'Book Your Massage',
+      buttonLink: 'https://portcreditphysioandrehab.janeapp.com/',
+      variant: 'primary',
+    },
+  },
+  {
+    id: 'plantar-fasciitis-heel-pain-treatment-mississauga',
+    slug: 'plantar-fasciitis-heel-pain-treatment-mississauga',
+    title: 'Morning Heel Pain? Why Your First Steps Hurt — and How to Fix It',
+    subtitle: 'A Port Credit Physiotherapist on What Plantar Fasciitis Really Is, and the Loading That Actually Resolves It',
+    excerpt: 'Sharp heel pain on your first steps? A Port Credit physiotherapist explains why plantar fasciitis hurts most in the morning, the myths that keep people in pain, and the 5 exercises that fix it.',
+    metaDescription: 'Sharp heel pain on your first steps? A Port Credit physiotherapist explains why plantar fasciitis hurts most in the morning — and the 5 exercises that fix it.',
+    keywords: [
+      'plantar fasciitis Mississauga',
+      'heel pain Mississauga',
+      'morning heel pain',
+      'plantar fasciitis treatment Port Credit',
+      'shockwave therapy Mississauga',
+      'plantar fasciitis exercises',
+      'physiotherapy for heel pain',
+      'why does my heel hurt in the morning',
+      'how long does plantar fasciitis take to heal',
+      'is walking good for plantar fasciitis',
+      'plantar fasciitis vs heel spur',
+    ],
+    author: {
+      name: 'Simoni Bhagat',
+      credentials: 'Registered Physiotherapist',
+      bio: 'Simoni Bhagat is a Registered Physiotherapist and the owner of Port Credit Physio & Rehab, practising in good standing with the College of Physiotherapists of Ontario (CPO) since 2021. Guided by her philosophy of Restore, Rebuild, and Reclaim, she combines evidence-based physiotherapy, personalized exercise programs, and patient education to treat the root cause of pain rather than just the symptoms.',
+      image: '/simoni-bhagat-physiotherapist.jpg',
+    },
+    publishedDate: '2026-08-18',
+    category: 'Foot & Ankle',
+    tags: [
+      'plantar fasciitis',
+      'heel pain',
+      'foot and ankle',
+      'shockwave therapy',
+      'sports injury rehabilitation',
+      'physiotherapy Mississauga',
+      'injury prevention',
+    ],
+    image: '/plantar-fasciitis-heel-pain-cover.jpg',
+    imageAlt: 'Person holding their heel in pain while getting out of bed — plantar fasciitis treatment at Port Credit Physio & Rehab in Mississauga',
+    content: [
+      {
+        type: 'paragraph',
+        content: 'You swing your legs out of bed, your foot hits the floor, and it feels like standing on a nail.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Then you limp to the kitchen, and after a few minutes it eases off. So you tell yourself it\'s fine. And then you\'re on your feet at work all afternoon, or you get back from a run along the Waterfront Trail, and by evening there\'s a deep, dull ache under your arch again.',
+      },
+      {
+        type: 'paragraph',
+        content: 'That pattern — worst first thing, better with movement, worse again after load — is the signature of plantar fasciitis. It\'s one of the most common complaints we treat at our Lakeshore Road clinic in Port Credit, and it affects roughly one in ten people at some point in their lives.',
+      },
+      {
+        type: 'paragraph',
+        content: 'The good news: it responds very well to the right treatment. The frustrating part: a lot of the advice people try first is the advice that keeps it going.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Here\'s what\'s actually happening in your foot, and what genuinely works.',
+      },
+      {
+        type: 'heading',
+        content: 'What Is the Plantar Fascia?',
+      },
+      {
+        type: 'paragraph',
+        content: 'Your plantar fascia is a thick, fibrous band of connective tissue that runs along the sole of your foot, anchoring your heel bone (the calcaneus) to the base of your toes.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Think of it as a bowstring holding up the arch of your foot. Every time you push off, it tensions, stores energy, and releases it — a spring that helps make walking efficient. It\'s built to take load. In fact, it\'s designed for it.',
+      },
+      {
+        type: 'paragraph',
+        content: 'That matters, because it changes how you should treat it when it\'s sore.',
+      },
+      {
+        type: 'heading',
+        content: 'Why Your Feet Take More Force Than You Think',
+      },
+      {
+        type: 'paragraph',
+        content: 'Walking loads your plantar fascia with roughly your body weight. Running pushes that to about two to three times body weight with every single foot strike.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Over an hour on your feet at work, or a 5K along the lake, that adds up to thousands of repetitions. Plantar fasciitis rarely comes from one bad step — it comes from a gradual mismatch between how much load the tissue is getting and how much it\'s currently prepared to handle.',
+      },
+      {
+        type: 'paragraph',
+        content: 'That mismatch usually shows up after something changed: new shoes, a jump in running mileage, a new job with more standing, a return to activity after time off, or a summer of flat sandals after a winter of supportive boots.',
+      },
+      {
+        type: 'heading',
+        content: 'The "First Step" Mystery — Why Mornings Are the Worst',
+      },
+      {
+        type: 'paragraph',
+        content: 'While you sleep, your foot rests in a relaxed, pointed position. The fascia sits shortened, and overnight your body lays down new repair tissue in that shortened state.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Then you stand up. Your full body weight loads the tissue and stretches it out in one go — and that\'s the sharp, stabbing pain. After a few minutes of walking, the tissue lengthens and adapts, the pain fades, and you get on with your day.',
+      },
+      {
+        type: 'paragraph',
+        content: 'The same thing happens after you\'ve been sitting at a desk for an hour, or driving. Physiotherapists call it "post-static dyskinesia" — pain after a period of stillness. If that describes you, it\'s a strong clue you\'re dealing with plantar fasciitis rather than a bone or nerve issue.',
+      },
+      {
+        type: 'heading',
+        content: 'What Is Plantar Fasciitis, Exactly?',
+      },
+      {
+        type: 'paragraph',
+        content: 'Plantar fasciitis develops when repetitive overload creates microscopic damage in the fascia faster than your body can repair it. The tissue becomes irritated, thickened, and sensitive.',
+      },
+      {
+        type: 'paragraph',
+        content: 'The symptoms we look for:',
+      },
+      {
+        type: 'list',
+        items: [
+          'Sharp, stabbing pain at the base of the heel in your first steps in the morning, or after sitting',
+          'Stiffness that eases with walking, but returns after prolonged standing or at the end of the day',
+          'A dull ache under the arch after activity — often worse the day after a run than during it',
+          'Tenderness when you press the inside of your heel where the fascia attaches',
+          'Pain that worsens on hard, flat surfaces or in unsupportive footwear',
+        ],
+      },
+      {
+        type: 'heading',
+        content: 'When Heel Pain Is Not Plantar Fasciitis',
+      },
+      {
+        type: 'paragraph',
+        content: 'This matters, because the wrong diagnosis means months of the wrong exercises. Heel pain can also come from:',
+      },
+      {
+        type: 'list',
+        items: [
+          'Fat pad irritation — a deeper, bruised feeling right under the heel, worse on hard floors',
+          'Achilles tendinopathy — pain at the back of the heel rather than underneath',
+          'Nerve entrapment (Baxter\'s nerve) — burning, tingling, or numbness alongside the ache',
+          'A calcaneal stress fracture — pain that gets progressively worse with activity and doesn\'t settle with rest, common after a sharp spike in training',
+        ],
+      },
+      {
+        type: 'paragraph',
+        content: 'A proper assessment separates these in about ten minutes. If your pain is burning, numb, or steadily worsening rather than following the morning-better-with-movement pattern, get it looked at rather than self-treating.',
+      },
+      {
+        type: 'heading',
+        content: 'Three Plantar Fasciitis Myths That Keep People in Pain',
+      },
+      {
+        type: 'subheading',
+        content: 'Myth 1 — "It\'s my heel spur causing the pain"',
+      },
+      {
+        type: 'paragraph',
+        content: 'Fact: Plenty of people have heel spurs on X-ray and no foot pain whatsoever, and plenty of people have textbook plantar fasciitis with no spur at all.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Current evidence points to spurs being a consequence of long-standing tension in the area rather than the source of symptoms. Treating the fascia — the tissue that\'s actually irritated — is what changes how your foot feels. Chasing the spur usually doesn\'t.',
+      },
+      {
+        type: 'subheading',
+        content: 'Myth 2 — "I should rest completely until it stops hurting"',
+      },
+      {
+        type: 'paragraph',
+        content: 'Fact: Rest calms things down in the short term, and then the problem returns the moment you go back to normal life — because rest doesn\'t build capacity. Tissue that isn\'t loaded gets weaker, not stronger.',
+      },
+      {
+        type: 'paragraph',
+        content: 'What the research supports is progressive, controlled loading: gradually and deliberately giving the fascia and surrounding muscles more work, at a level that doesn\'t flare you up, until the tissue can handle your actual daily demands again. That\'s the core of good physiotherapy for this condition — and it\'s why "just rest it" so often fails.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Soft, unsupportive slippers around the house fall into the same trap. They feel kind in the moment and give your foot nothing to work with.',
+      },
+      {
+        type: 'subheading',
+        content: 'Myth 3 — "It\'s just inflammation, so it\'ll settle on its own"',
+      },
+      {
+        type: 'paragraph',
+        content: 'Fact: The "-itis" in the name is a bit of a historical accident. Early on there is genuine inflammation, but in chronic cases — pain lasting beyond a couple of months — what tissue studies actually show is degeneration: disorganised collagen, reduced blood flow, and loss of elasticity. Clinically this is closer to plantar fasciosis.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Why does the distinction matter to you? Because if it were pure inflammation, anti-inflammatories and rest would fix it. Degenerative tissue needs a stimulus to remodel — which means loading, not just waiting. It also explains why chronic cases take longer than people expect, and why the ones that drag on for a year are almost always the ones nobody loaded properly.',
+      },
+      {
+        type: 'heading',
+        content: '5 Plantar Fasciitis Exercises You Can Start With',
+      },
+      {
+        type: 'callout',
+        content: 'These are a general starting point, not a personalised program. Everyone\'s foot loads differently — if pain is sharp, worsening, or lasts more than an hour after you exercise, stop and get assessed.',
+        variant: 'warning',
+      },
+      {
+        type: 'subheading',
+        content: '1. Plantar Fascia & Calf Ball Rolls',
+      },
+      {
+        type: 'paragraph',
+        content: 'How: Sitting down, place a massage ball or tennis ball under the arch of your foot. Apply comfortable pressure and roll front-to-back, then side-to-side, across the sole. Follow with the same on your calf. 1–2 minutes per foot.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Why: Reduces tissue sensitivity and improves local blood flow. Best used as a warm-up before the strengthening work below — it\'s a door-opener, not a treatment on its own.',
+      },
+      {
+        type: 'subheading',
+        content: '2. Towel Curls',
+      },
+      {
+        type: 'paragraph',
+        content: 'How: Sit on a chair with a hand towel flat on the floor in front of you. Using only your toes, scrunch the towel toward you. 2–3 sets of 10–12.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Why: Strengthens the small intrinsic muscles of your foot, which share the load with your fascia. Stronger intrinsics mean the fascia does less of the work on every step.',
+      },
+      {
+        type: 'subheading',
+        content: '3. Calf Stretch — Both Versions',
+      },
+      {
+        type: 'paragraph',
+        content: 'How: Face a wall, one foot back, back heel flat on the floor. Version A: back knee straight — targets the gastrocnemius. Version B: back knee slightly bent — targets the deeper soleus. Hold 30 seconds, 3 times each, twice a day.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Why: A tight calf pulls directly on your heel bone and increases tension through the fascia. Calf tightness is one of the most consistent findings we see in people with stubborn heel pain — and one of the easiest to change.',
+      },
+      {
+        type: 'subheading',
+        content: '4. High-Load Calf Raises With a Towel Under the Toes',
+      },
+      {
+        type: 'paragraph',
+        content: 'How: Stand at the edge of a step with a rolled towel under your toes so they\'re propped upward (this pre-tensions the fascia). Rise onto your toes over 3 seconds, pause at the top, lower over 3 seconds. Start with 2 sets of 12, every other day.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Why: This is the one that actually changes tissue. Slow, heavy loading with the toes extended is the exercise with the strongest research support for plantar fasciitis — it stimulates collagen remodelling and rebuilds the fascia\'s tolerance. Progress by adding load (a backpack with books works), not by rushing the tempo.',
+      },
+      {
+        type: 'subheading',
+        content: '5. Resisted Foot Inversion',
+      },
+      {
+        type: 'paragraph',
+        content: 'How: Sit with legs extended. Loop a resistance band around the inside edge of your foot, anchor the other end, and turn your foot inward against the band. Hold 1 second, return slowly. 2–3 sets of 12.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Why: Strengthens the tibialis posterior, the main dynamic supporter of your arch. When it\'s weak, the arch collapses further into each step and the fascia takes the strain.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Most people notice their morning pain easing within 4 to 6 weeks of consistent loading. Full resolution in a chronic case commonly takes 3 to 6 months — and the people who get there are the ones who kept going after the pain improved, not the ones who stopped at week five.',
+      },
+      {
+        type: 'heading',
+        content: 'Shockwave Therapy for Stubborn Heel Pain',
+      },
+      {
+        type: 'paragraph',
+        content: 'When heel pain has been hanging around for months and exercise alone has plateaued, Radial Shockwave Therapy is one of the most effective non-invasive options available — and it\'s one of the reasons people travel across Mississauga to our Port Credit clinic.',
+      },
+      {
+        type: 'paragraph',
+        content: 'How it works: A handheld applicator delivers acoustic pressure waves into the damaged tissue. This stimulates microcirculation, disrupts chronic scar tissue, and re-triggers the body\'s natural healing response in tissue that has essentially stalled.',
+      },
+      {
+        type: 'paragraph',
+        content: 'What to expect: Sessions take about 30 minutes. Most people describe it as intense but tolerable, and you can walk out and carry on with your day. A typical course is 4–6 sessions spaced a week apart, always alongside a loading program — shockwave restarts the healing, the exercises rebuild the strength.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Who it suits best: Heel pain lasting longer than three months that hasn\'t responded to stretching and footwear changes.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Coverage: Shockwave Therapy at our clinic is delivered as part of your physiotherapy treatment, which means it\'s typically claimable under extended health physiotherapy benefits. Plans vary — we\'re happy to check yours before you commit, and we direct bill most major insurers.',
+      },
+      {
+        type: 'heading',
+        content: 'How Physiotherapy Treats the Cause, Not Just the Symptom',
+      },
+      {
+        type: 'paragraph',
+        content: 'Anyone can hand you a calf stretch. What changes the outcome is figuring out why your fascia got overloaded in the first place — because if that doesn\'t change, the pain comes back.',
+      },
+      {
+        type: 'paragraph',
+        content: 'A course of treatment with us includes:',
+      },
+      {
+        type: 'list',
+        items: [
+          'Comprehensive assessment — We look at foot biomechanics, arch control, ankle mobility, calf strength, and your walking and running gait. We also go through your training history, your job, and your footwear, because that\'s usually where the answer lives.',
+          'Hands-on manual therapy — Mobilising stiff ankle and midfoot joints and releasing restricted tissue, to make the loading work more comfortable and effective.',
+          'A progressive loading program — Built around your actual capacity and progressed on a schedule, so you\'re always working at the level that drives change without flaring you up.',
+          'Shockwave Therapy where it\'s indicated — Integrated into the plan for chronic cases, not sold as a standalone fix.',
+          'Load and footwear guidance — Practical changes to your running volume, standing hours, or shoes that stop the problem regenerating.',
+        ],
+      },
+      {
+        type: 'heading',
+        content: 'Why Port Credit Physio & Rehab',
+      },
+      {
+        type: 'paragraph',
+        content: 'We\'re on Lakeshore Road East in the heart of Port Credit, treating people from across Mississauga — Lorne Park, Clarkson, Cooksville, Erindale, and the surrounding neighbourhoods.',
+      },
+      {
+        type: 'list',
+        items: [
+          'Evidence-based care — Treatment plans built on current clinical research, not the outdated "rest and stretch" advice that keeps heel pain going',
+          'One-on-one attention — You work with your physiotherapist for your full appointment, not passed to an aide between machines',
+          'Advanced modalities on site — In-clinic Shockwave Therapy, manual therapy, and structured rehab programs under one roof',
+          'Direct billing — To most major insurers, so you\'re not out of pocket while you claim',
+          'Easy access — 268 Lakeshore Rd East, with free parking nearby at Lot 7 and Lot 12',
+          'Open evenings and weekends',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'How long does plantar fasciitis take to heal?',
+        answer: 'Most people see meaningful improvement in morning pain within 4–6 weeks of a structured loading program. Chronic cases that have been present for several months typically take 3–6 months to resolve fully. Cases left untreated can persist for a year or longer, which is the main argument for starting early.',
+      },
+      {
+        question: 'Should I keep walking or running with plantar fasciitis?',
+        answer: 'In most cases, yes — with modification. Complete rest weakens the tissue. The usual guideline is that pain during activity should stay mild, and shouldn\'t be worse the following morning. If it is, the load was too high. A physiotherapist can set your specific thresholds rather than leaving you to guess.',
+      },
+      {
+        question: 'Do I need a doctor\'s referral to see a physiotherapist in Ontario?',
+        answer: 'No. Physiotherapists in Ontario are primary care practitioners — you can book directly. Some extended health plans ask for a referral before they\'ll reimburse, so it\'s worth a quick check with your insurer.',
+      },
+      {
+        question: 'Are orthotics or new shoes worth it?',
+        answer: 'Supportive footwear genuinely helps in the short term by reducing strain while the tissue settles. Orthotics can be useful for some foot types, but they manage the symptom rather than build capacity — they work best alongside a strengthening program, not instead of one.',
+      },
+      {
+        question: 'Is plantar fasciitis the same as a heel spur?',
+        answer: 'No. A heel spur is a bony growth on the calcaneus that often shows up on X-rays of people with no pain at all. Plantar fasciitis is irritation and degeneration of the fascia itself. They frequently coexist, but the fascia is what\'s causing your symptoms.',
+      },
+      {
+        question: 'Does shockwave therapy hurt?',
+        answer: 'It\'s intense during the treatment — most people rate it as moderate, manageable discomfort — and it lasts around 10 minutes. Some mild tenderness afterwards is normal and usually settles within a day.',
+      },
+      {
+        question: 'What if the pain doesn\'t go away?',
+        answer: 'Persistent heel pain that hasn\'t responded to 3+ months of consistent loading warrants reassessment. It may be a different diagnosis, or you may need shockwave, a change in loading strategy, or imaging. That\'s exactly the point at which most people should stop self-treating.',
+      },
+    ],
+    cta: {
+      title: 'Take a Painless First Step Tomorrow Morning',
+      description: 'Heel pain doesn\'t have to be something you plan your day around. Most cases respond well once someone identifies the actual driver and gives you the right loading plan. Start with a free 15-minute consultation — we\'ll assess your heel, explain what\'s causing it, and tell you honestly whether physiotherapy will help.',
+      buttonText: 'Book Your Free 15-Minute Consultation',
+      buttonLink: 'https://portcreditphysioandrehab.janeapp.com/',
+      variant: 'primary',
+    },
+  },
 ]
 
 export function getBlogPostBySlug(slug: string): BlogPost | undefined {
